@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using StarterAssets;
 using UnityEngine.Rendering;
+using Tripolygon.UModeler.UI.Data;
 
 
 [RequireComponent(typeof(PlayerInput))]
@@ -35,6 +36,7 @@ public class Player : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
         _input = GetComponent<StarterAssetsInputs>();
         _controller = GetComponent<FirstPersonController>();
+
         
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
