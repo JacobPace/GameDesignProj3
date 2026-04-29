@@ -3,6 +3,10 @@ using UnityEngine.InputSystem;
 using StarterAssets;
 using UnityEngine.Rendering;
 using Tripolygon.UModeler.UI.Data;
+using HighScore;
+using Unity.VisualScripting;
+using UnityEngine.UI;
+using System;
 
 
 [RequireComponent(typeof(PlayerInput))]
@@ -29,6 +33,10 @@ public class Player : MonoBehaviour
     public StarterAssetsInputs _input;
     public FirstPersonController _controller;
 
+    //ScoreStuff
+    public String PlayerName = null;
+    public String inputScore = null;
+
 
     private void Awake()
     {
@@ -37,6 +45,7 @@ public class Player : MonoBehaviour
         _input = GetComponent<StarterAssetsInputs>();
         _controller = GetComponent<FirstPersonController>();
 
+        HS.Init(this, "Catacombs");
         
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -72,6 +81,18 @@ public class Player : MonoBehaviour
         }
         
     }
+
+    public void SubmitScore()
+    {
+        HS.SubmitHighScore(this, PlayerName, int.Parse(inputScore));
+    }
+
+    public void ClearScores()
+    {
+        HS.Clear(this);
+    }
+
+
 }
 /*
 Dev Notes:
