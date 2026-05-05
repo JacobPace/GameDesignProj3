@@ -91,6 +91,10 @@ public class Player : MonoBehaviour
             {
                 Flashlight.Instance.ToggleFlashlight();
             }
+            if (_playerInput.actions["Recharge"].triggered)
+            {
+                Flashlight.Instance.Recharge();
+            }
 
             stamina = Mathf.Clamp(stamina, 0, maxStamina);
         }
