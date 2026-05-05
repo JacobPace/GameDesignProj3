@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     public float staminaRegen = 10f;
     public float sanity = 100f;
     public LayerMask lightLayer;
+    public GameObject winZone;
 
     [Header("Inventory Settings")]
     public Inventory inventory;
@@ -155,6 +156,20 @@ public class Player : MonoBehaviour
             GameManager.Difficulty.Normal => normalDrainRate,
             _ => normalDrainRate,
         };
+    }
+
+    public void HandleWinCondition()
+    {
+        Debug.Log("Victory! Player reached the win zone.");
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject == winZone)
+        {
+            HandleWinCondition();
+        }
     }
 
 }
