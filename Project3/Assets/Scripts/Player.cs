@@ -7,7 +7,7 @@ using HighScore;
 using Unity.VisualScripting;
 using UnityEngine.UI;
 using System;
-
+using System.Collections.Generic;
 
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(StarterAssetsInputs))]
@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     public float staminaDrain = 25f;
     public float staminaRegen = 10f;
 
+    [Header("Inventory Settings")]
+    public Inventory inventory = new();
 
     // Singleton Instance
     public static Player Instance { get; private set; }
@@ -73,9 +75,8 @@ public class Player : MonoBehaviour
             else if (stamina < maxStamina) stamina += staminaRegen * Time.deltaTime;
 
             if (_playerInput.actions["Flashlight"].triggered){
-                Debug.Log("light");
+                Flashlight.Instance.ToggleFlashlight();
             }
-
 
             stamina = Mathf.Clamp(stamina, 0, maxStamina);
         }
@@ -93,6 +94,39 @@ public class Player : MonoBehaviour
     }
 
 
+}
+
+[System.Serializable]
+public class Inventory
+{
+    private Dictionary<string, int> _items = new()
+    {
+        { "Battery", 0 },
+        { "Collectible", 0 }
+    };
+
+    public bool TryUseItem(string itemName)
+    {
+        if (_items.ContainsKey(itemName) && _items[itemName] > 0)
+        {
+            _items[itemName]--;
+            Debug.Log($"{itemName} used. Remaining: {_items[itemName]}");
+            return true;
+        }
+
+        Debug.Log($"Out of {itemName}s!");
+        return false;
+    }
+
+    public void AddItem(string itemName, int amount)
+    {
+        if (_items.ContainsKey(itemName))
+            _items[itemName] += amount;
+        else
+            _items[itemName] = amount;
+    }
+
+    public int GetCount(string itemName) => _items.ContainsKey(itemName) ? _items[itemName] : 0;
 }
 /*
 Dev Notes:
