@@ -14,7 +14,7 @@ public class StationManager : MonoBehaviour, IInteractable
     public LootRange normalRange = new() { min = 1, max = 3 };
     public LootRange hardRange = new() { min = 0, max = 2 };
 
-    private bool _hasBeenUsed = false;
+    public bool _hasBeenUsed = false;
 
     public void Interact()
     {
@@ -33,6 +33,11 @@ public class StationManager : MonoBehaviour, IInteractable
 
     private int CalculateRandomLoot()
     {
+        if (GameManager.Instance == null)
+        {
+            Debug.LogWarning("GameManager.Instance is null! Defaulting to Normal range.");
+            return Random.Range(normalRange.min, normalRange.max + 1);
+        }
         var chosenRange = GameManager.Instance.currentDifficulty switch
         {
             GameManager.Difficulty.Easy => easyRange,

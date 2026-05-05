@@ -2342,6 +2342,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7441181903422222419}
+  - component: {fileID: -1683796704515146018}
+  - component: {fileID: 6828075541995979584}
   m_Layer: 0
   m_Name: WendigoUnpacked
   m_TagString: Untagged
@@ -2368,6 +2370,53 @@ Transform:
   - {fileID: 7527901028843102888}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &-1683796704515146018
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7490219464913633920}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 50
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 180
+  m_BaseOffset: 80
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &6828075541995979584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7490219464913633920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f50f064b9a3eba478efcf22c1e4ebcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CaveMonsterAI
+  player: {fileID: 0}
+  playerCamera: {fileID: 0}
+  playerObstacle: {fileID: 0}
+  playerSanity: 100
+  maxStalkDistance: 25
+  minStalkDistance: 5
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 256
+  lightLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  currentState: 0
 --- !u!1 &7536090093468866592
 GameObject:
   m_ObjectHideFlags: 0

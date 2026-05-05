@@ -1,13 +1,14 @@
-using UnityEngine;
-using UnityEngine.InputSystem;
-using StarterAssets;
-using UnityEngine.Rendering;
-using Tripolygon.UModeler.UI.Data;
 using HighScore;
-using Unity.VisualScripting;
-using UnityEngine.UI;
+using StarterAssets;
 using System;
 using System.Collections.Generic;
+using Tripolygon.UModeler.UI.Data;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
+using UnityEngine.UI;
+using static StationManager;
 
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(StarterAssetsInputs))]
@@ -20,15 +21,25 @@ public class Player : MonoBehaviour
     public float stamina;
     public float staminaDrain = 25f;
     public float staminaRegen = 10f;
+    public float sanity = 100f;
+    public LayerMask lightLayer;
 
     [Header("Inventory Settings")]
-    public Inventory inventory = new();
+    public Inventory inventory;
+
+    [Header("Sanity Drain Rate per Difficulty")]
+    public float easyDrainRate = 0.5f;
+    public float normalDrainRate = 1f;
+    public float hardDrainRate = 2f;
+
+    public float drainRate = 0f;
 
     // Singleton Instance
     public static Player Instance { get; private set; }
-    
-    
+
+
     // Private Fields
+    private Collider[] _lightResults = new Collider[10];
 
     // Input Systems
     public PlayerInput _playerInput;
@@ -40,15 +51,17 @@ public class Player : MonoBehaviour
     public String inputScore = null;
 
 
+
     private void Awake()
     {
         Instance = this;
+        inventory = new();
         _playerInput = GetComponent<PlayerInput>();
         _input = GetComponent<StarterAssetsInputs>();
         _controller = GetComponent<FirstPersonController>();
 
         HS.Init(this, "Catacombs");
-        
+
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -74,13 +87,16 @@ public class Player : MonoBehaviour
             }
             else if (stamina < maxStamina) stamina += staminaRegen * Time.deltaTime;
 
-            if (_playerInput.actions["Flashlight"].triggered){
+            if (_playerInput.actions["Flashlight"].triggered)
+            {
                 Flashlight.Instance.ToggleFlashlight();
             }
 
             stamina = Mathf.Clamp(stamina, 0, maxStamina);
         }
-        
+        if (drainRate == 0) drainRate = SetDrainRate();
+        UpdateSanity();
+
     }
 
     public void SubmitScore()
@@ -93,40 +109,98 @@ public class Player : MonoBehaviour
         HS.Clear(this);
     }
 
+    public void UpdateSanity()
+    {
+        int numFound = Physics.OverlapSphereNonAlloc(transform.position, 20f, _lightResults, lightLayer, QueryTriggerInteraction.Collide);
+
+        bool isInLight = false;
+
+        for (int i = 0; i < numFound; i++)
+        {
+            Collider lightCollider = _lightResults[i];
+
+            if (!Physics.Linecast(lightCollider.transform.position, transform.position + Vector3.up))
+            {
+                isInLight = true;
+                break;
+            }
+        }
+
+        if (isInLight)
+        {
+            sanity += 2f * drainRate * Time.deltaTime;
+        }
+        else
+        {
+            sanity -= 5f * drainRate * Time.deltaTime;
+        }
+        sanity = Mathf.Clamp(sanity, 0, 100);
+    }
+
+    public float SetDrainRate()
+    {
+        if (GameManager.Instance == null)
+        {
+            Debug.LogWarning("GameManager Instance not found! Defaulting to Normal drain rate.");
+            return normalDrainRate;
+        }
+        return drainRate = GameManager.Instance.currentDifficulty switch
+        {
+            GameManager.Difficulty.Easy => easyDrainRate,
+            GameManager.Difficulty.Hard => hardDrainRate,
+            GameManager.Difficulty.Normal => normalDrainRate,
+            _ => normalDrainRate,
+        };
+    }
 
 }
 
 [System.Serializable]
 public class Inventory
 {
-    private Dictionary<string, int> _items = new()
-    {
-        { "Battery", 0 },
-        { "Collectible", 0 }
-    };
+    private Dictionary<string, int> _items;
 
-    public bool TryUseItem(string itemName)
+    // Helper method to ensure the dictionary exists
+    private void EnsureDictionary()
     {
-        if (_items.ContainsKey(itemName) && _items[itemName] > 0)
+        if (_items == null)
         {
-            _items[itemName]--;
-            Debug.Log($"{itemName} used. Remaining: {_items[itemName]}");
-            return true;
+            _items = new Dictionary<string, int>
+            {
+                { "Battery", 0 },
+                { "Collectible", 0 }
+            };
         }
-
-        Debug.Log($"Out of {itemName}s!");
-        return false;
     }
 
     public void AddItem(string itemName, int amount)
     {
+        EnsureDictionary();
+
         if (_items.ContainsKey(itemName))
             _items[itemName] += amount;
         else
             _items[itemName] = amount;
+
+        Debug.Log($"Inventory: Added {amount} {itemName}. Total: {_items[itemName]}");
     }
 
-    public int GetCount(string itemName) => _items.ContainsKey(itemName) ? _items[itemName] : 0;
+    public bool TryUseItem(string itemName)
+    {
+        EnsureDictionary();
+        if (_items.ContainsKey(itemName) && _items[itemName] > 0)
+        {
+            _items[itemName]--;
+            return true;
+        }
+        return false;
+    }
+
+    public int GetCount(string itemName)
+    {
+        EnsureDictionary();
+        return _items.ContainsKey(itemName) ? _items[itemName] : 0;
+    }
 }
 /*
 Dev Notes:

@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 5589807692052878117}
   - component: {fileID: -1525411219579866623}
   - component: {fileID: -7970191202717789374}
-  m_Layer: 0
+  - component: {fileID: 904374446807175992}
+  - component: {fileID: 4305264606907102041}
+  m_Layer: 6
   m_Name: ResourceStation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,6 +58,7 @@ MonoBehaviour:
   hardRange:
     min: 0
     max: 2
+  _hasBeenUsed: 0
 --- !u!114 &-7970191202717789374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +79,45 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!65 &904374446807175992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4644936996963265658}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2773684, y: 1.4897792, z: 0.8680868}
+  m_Center: {x: 2.5259795, y: 0.7238803, z: 0.7419666}
+--- !u!114 &4305264606907102041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4644936996963265658}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &2778517024825492330
 PrefabInstance:
   m_ObjectHideFlags: 0

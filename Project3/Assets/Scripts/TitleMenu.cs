@@ -16,7 +16,11 @@ public class TitleMenu : MonoBehaviour
         }
     }
 
-    public void StartGame() => SceneManager.LoadScene("MapTestScene");
+    public void StartGame()
+    {
+        SceneManager.LoadScene("MapTestScene");
+    }
+
     public void QuitGame() => Application.Quit();
 
 }

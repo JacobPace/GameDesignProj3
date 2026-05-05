@@ -3,7 +3,7 @@ using UnityEngine;
 public class Flashlight : MonoBehaviour
 {
     [Header("Settings")]
-    public float maxPowerTime = 30f; // Seconds the flashlight lasts
+    public float maxPowerTime = 60f; // Seconds the flashlight lasts
     public float currentPower;
     public Light lightSource;
 
@@ -33,11 +33,11 @@ public class Flashlight : MonoBehaviour
             if (currentPower <= 0) PowerOut();
         }
 
-        // Press 'R' to recharge using an item from the inventory class, can be changed to be done in player script
+        /* Press 'R' to recharge using an item from the inventory class, can be changed to be done in player script
         if (Input.GetKeyDown(KeyCode.R) && currentPower < maxPowerTime)
         {
             Recharge();
-        }
+        }*/
     }
 
     public void ToggleFlashlight()
