@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
@@ -46,13 +46,29 @@ public class SceneTransitionManager : MonoBehaviour
 
     IEnumerator Transition(string sceneName)
     {
+        fadeImage.raycastTarget = true;
+
+        // FADE OUT (to black)
         yield return StartCoroutine(Fade(0, 1));
 
-        yield return SceneManager.LoadSceneAsync(sceneName);
+        // Load scene BUT DO NOT switch instantly
+        AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
+        op.allowSceneActivation = true;
 
+        // Wait until scene is fully loaded
+        while (!op.isDone)
+            yield return null;
+
+        // Force screen black AFTER scene loads
+        SetAlpha(1);
+
+        // Small buffer frame (VERY IMPORTANT)
         yield return null;
 
+        // FADE IN (black → gameplay)
         yield return StartCoroutine(Fade(1, 0));
+
+        fadeImage.raycastTarget = false;
     }
 
     IEnumerator Fade(float start, float end)
@@ -81,5 +97,11 @@ public class SceneTransitionManager : MonoBehaviour
 
         if (vignette != null)
             vignette.intensity.value = end > start ? 0.5f : 0f;
+    }
+    void SetAlpha(float alpha)
+    {
+        Color c = fadeImage.color;
+        c.a = alpha;
+        fadeImage.color = c;
     }
 }
