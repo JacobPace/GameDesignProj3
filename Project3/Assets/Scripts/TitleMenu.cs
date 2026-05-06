@@ -19,9 +19,9 @@ public class TitleMenu : MonoBehaviour
     public void StartGame()
     {
         Time.timeScale = 1.0f;
-        MusicManager.Instance.PlayMusic(gameMusic, 1.5f);
         SceneTransitionManager.Instance.LoadScene("MapTestScene");
     }
 
     public void QuitGame() => Application.Quit();
+
 }
