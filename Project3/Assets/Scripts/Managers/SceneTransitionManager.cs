@@ -5,9 +5,12 @@ using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using System.Collections;
 
+
 public class SceneTransitionManager : MonoBehaviour
 {
     public static SceneTransitionManager Instance;
+    public Camera mainCamera;
+    private float defaultFOV;
 
     [Header("UI")]
     public Image fadeImage;
@@ -17,8 +20,13 @@ public class SceneTransitionManager : MonoBehaviour
     public Volume volume;
     private Vignette vignette;
 
+    [Header("Zoom")]
+    public float zoomAmount = 8f;
+
     void Awake()
     {
+        defaultFOV = mainCamera.fieldOfView;
+
         // Singleton
         if (Instance != null)
         {
@@ -48,10 +56,10 @@ public class SceneTransitionManager : MonoBehaviour
     {
         fadeImage.raycastTarget = true;
 
-        // FADE OUT (to black)
+        // fade to black
         yield return StartCoroutine(Fade(0, 1));
 
-        // Load scene BUT DO NOT switch instantly
+        // Load scene, do NOT switch yet
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
         op.allowSceneActivation = true;
 
@@ -62,10 +70,10 @@ public class SceneTransitionManager : MonoBehaviour
         // Force screen black AFTER scene loads
         SetAlpha(1);
 
-        // Small buffer frame (VERY IMPORTANT)
+        // Small buffer frame 
         yield return null;
 
-        // FADE IN (black → gameplay)
+        // Fade in
         yield return StartCoroutine(Fade(1, 0));
 
         fadeImage.raycastTarget = false;
@@ -80,23 +88,55 @@ public class SceneTransitionManager : MonoBehaviour
         {
             float t = time / fadeDuration;
 
-            // Fade screen
-            color.a = Mathf.Lerp(start, end, t);
+            // Camera easing
+            float eased = Mathf.SmoothStep(0f, 1f, t);
+
+            // Screen fade
+            color.a = Mathf.Lerp(start, end, eased);
             fadeImage.color = color;
 
-            // Fade vignette
+            // -- Camera zoom --
+            if (mainCamera != null)
+            {
+                float targetFOV = defaultFOV - zoomAmount;
+
+                // Zoom in during fade-out
+                if (start < end)
+                {
+                    mainCamera.fieldOfView = Mathf.Lerp(defaultFOV, targetFOV, eased);
+                }
+                // Zoom out during fade-in
+                else
+                {
+                    mainCamera.fieldOfView = Mathf.Lerp(targetFOV, defaultFOV, eased);
+                }
+            }
+
+            // -- Vignette pulse --
             if (vignette != null)
-                vignette.intensity.value = Mathf.Lerp(0f, 0.5f, color.a);
+            {
+                // intensity ramp
+                float baseIntensity = Mathf.Lerp(0.2f, 0.6f, color.a);
+
+                // pulse peak
+                float pulse = Mathf.Sin(eased * Mathf.PI);
+                float pulseStrength = 0.25f;
+                vignette.intensity.value = baseIntensity + pulse * pulseStrength;
+            }
 
             time += Time.deltaTime;
             yield return null;
         }
 
+        // -- Final state --
         color.a = end;
         fadeImage.color = color;
 
+        if (mainCamera != null) 
+            mainCamera.fieldOfView = defaultFOV;
         if (vignette != null)
-            vignette.intensity.value = end > start ? 0.5f : 0f;
+            vignette.intensity.value = (end == 1f) ? 0.6f : 0f; 
+
     }
     void SetAlpha(float alpha)
     {

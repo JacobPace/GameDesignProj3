@@ -11,16 +11,9 @@ public class TitleMenu : MonoBehaviour
     public void HandleDifficultyChange(int index)
     {
         if (GameManager.Instance != null)
-        {
             GameManager.Instance.SetDifficulty(index);
-        }
     }
 
-    public void StartGame()
-    {
-        Time.timeScale = 1.0f;
-    }
-
+    public void StartGame() => Time.timeScale = 1.0f;
     public void QuitGame() => Application.Quit();
-
 }
