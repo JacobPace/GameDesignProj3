@@ -1,21 +1,75 @@
 using UnityEngine;
 using UnityEngine.Audio;
+
 public class SoundMixerManager : MonoBehaviour
 {
+    public static SoundMixerManager Instance;
+
     [SerializeField] private AudioMixer audioMixer;
+
+    [Range(0.0001f, 1f)] public float masterVolume = 1f;
+    [Range(0.0001f, 1f)] public float soundFXVolume = 1f;
+    [Range(0.0001f, 1f)] public float musicVolume = 1f;
+
+    void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
+    void Start()
+    {
+        ApplyAll();
+    }
 
     public void SetMasterVolume(float level)
     {
-        audioMixer.SetFloat("masterVolume", Mathf.Log10(level) * 20f);
+        masterVolume = level;
+        ApplyMaster();
     }
-    
+
     public void SetSoundFXVolume(float level)
     {
-        audioMixer.SetFloat("soundFXVolume", Mathf.Log10(level) * 20f);
+        soundFXVolume = level;
+        ApplySFX();
     }
 
     public void SetMusicVolume(float level)
     {
-        audioMixer.SetFloat("musicVolume", Mathf.Log10(level) * 20f);
+        musicVolume = level;
+        ApplyMusic();
+    }
+
+    void ApplyMaster()
+    {
+        audioMixer.SetFloat("masterVolume", ToDB(masterVolume));
+    }
+
+    void ApplySFX()
+    {
+        audioMixer.SetFloat("soundFXVolume", ToDB(soundFXVolume));
+    }
+
+    void ApplyMusic()
+    {
+        audioMixer.SetFloat("musicVolume", ToDB(musicVolume));
+    }
+
+    void ApplyAll()
+    {
+        ApplyMaster();
+        ApplySFX();
+        ApplyMusic();
+    }
+
+    float ToDB(float value)
+    {
+        return Mathf.Log10(Mathf.Clamp(value, 0.0001f, 1f)) * 20f;
     }
 }
