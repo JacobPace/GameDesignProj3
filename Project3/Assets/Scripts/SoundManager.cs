@@ -1,16 +1,38 @@
 using UnityEngine;
 
+public enum SoundType
+{
+    BG_MUSIC,
+    UI_CLICK,
+    UI_HOVER,
+    FLASHLIGHT_CLICK,
+    FLASHLIGHT_RELOAD,
+    LOW_SANITY,
+    PICKUP_ITEM,
+    PLAYER_STEP,
+    WENDIGO_ROAR,
+    WENDIGO_STEP
+}
+
+[RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private AudioClip[] soundList;
+    private static SoundManager instance;
+    private AudioSource audioSource;
+
+    private void Awake()
     {
-        
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public static void PlaySound(SoundType sound, float volume = 1)
+    {
+        instance.audioSource.PlayOneShot(instance.soundList[(int)sound], volume);
     }
 }
