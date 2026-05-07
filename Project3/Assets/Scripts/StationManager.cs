@@ -27,7 +27,11 @@ public class StationManager : MonoBehaviour, IInteractable
         int finalAmount = CalculateRandomLoot();
         Player.Instance.inventory.AddItem("Battery", finalAmount);
         _hasBeenUsed = true;
-        Debug.Log($"Station gave {finalAmount} items on {GameManager.Instance.currentDifficulty}");
+        string diff = (GameManager.Instance != null)
+            ? GameManager.Instance.currentDifficulty.ToString()
+            : "Unknown (Missing GameManager)";
+
+        Debug.Log($"Station gave {finalAmount} items on {diff}");
         // Logic to change model or color can be done here
     }
 

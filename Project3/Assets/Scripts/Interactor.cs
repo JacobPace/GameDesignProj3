@@ -9,6 +9,9 @@ public class Interactor : MonoBehaviour
     public float InteractRange;
     public LayerMask interactableLayer;
 
+    [Header("UI Reference")]
+    public GameObject interactionPrompt;
+
     private Outline _lastOutline; // Store reference to current outline
 
     void Update()
@@ -23,52 +26,44 @@ public class Interactor : MonoBehaviour
                 StationManager station = hitInfo.collider.GetComponentInParent<StationManager>();
                 Outline currentOutline = hitInfo.collider.GetComponentInParent<Outline>();
 
-                // Hide outline if it's a station that has already been used
+                // Hide outline if the interactable has already been used
                 bool isDisabled = (station != null && station._hasBeenUsed);
 
-                // 2. Manage Outline Visibility
-                if (currentOutline != _lastOutline)
+                // Manage Outline Visibility
+                if (currentOutline != _lastOutline || (isDisabled && _lastOutline != null))
                 {
-                    ClearOutline(); // Turn off the old one
+                    ClearInteraction();
 
                     if (currentOutline != null && !isDisabled)
                     {
                         currentOutline.enabled = true;
                         _lastOutline = currentOutline;
+                        if (interactionPrompt != null) interactionPrompt.SetActive(true);
                     }
+                    
                 }
 
                 if (Player.Instance._playerInput.actions["Interact"].WasPressedThisFrame())
                 {
                     IInteractable interactObject = hitInfo.collider.GetComponentInParent<IInteractable>();
 
-                    if (interactObject != null && !isDisabled)
-                    {
-                        if (Player.Instance != null && Player.Instance.inventory != null)
-                        {
-                            interactObject.Interact();
-                            ClearOutline();
-                        }
-                        else
-                        {
-                            Debug.LogError("Interactor: Player or Inventory is missing in the scene!");
-                        }
-                    }
+                    if (interactObject != null && !isDisabled) interactObject.Interact();
                 }
             }
             else
             {
-                ClearOutline();
+                ClearInteraction();
             }
         }
     }
 
-    private void ClearOutline()
+    private void ClearInteraction()
     {
         if (_lastOutline != null)
         {
             _lastOutline.enabled = false;
             _lastOutline = null;
         }
+        if (interactionPrompt != null) interactionPrompt.SetActive(false);
     }
 }
