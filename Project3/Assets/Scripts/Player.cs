@@ -104,6 +104,9 @@ public class Player : MonoBehaviour
         if (drainRate == 0) drainRate = SetDrainRate();
         UpdateSanity();
 
+        // Pausing
+        if (_playerInput.actions["Pause"].triggered) Journal.Instance.PauseGame();
+
     }
 
     public void SubmitScore()
