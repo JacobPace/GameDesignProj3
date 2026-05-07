@@ -68,6 +68,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         stamina = maxStamina;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -101,6 +103,9 @@ public class Player : MonoBehaviour
         }
         if (drainRate == 0) drainRate = SetDrainRate();
         UpdateSanity();
+
+        // Pausing
+        if (_playerInput.actions["Pause"].triggered) Journal.Instance.PauseGame();
 
     }
 
