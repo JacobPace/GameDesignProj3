@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class test : MonoBehaviour, IInteractable
 {
+    [SerializeField] private string promptText = "Press 'E' to Pickup";
+    public string InteractionPrompt => promptText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

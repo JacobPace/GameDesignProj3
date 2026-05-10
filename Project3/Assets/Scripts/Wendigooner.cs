@@ -91,6 +91,7 @@ public class Wendigooner : MonoBehaviour
 
     void ExecuteState()
     {
+        if (!agent.isOnNavMesh) return;
         agent.isStopped = false;
         if (playerObstacle != null) playerObstacle.enabled = (currentState == MonsterState.Stalking);
 
@@ -159,7 +160,8 @@ public class Wendigooner : MonoBehaviour
         _vanishTimer = 8f;
         currentState = MonsterState.Vanished;
         ToggleVisible(false);
-        agent.isStopped = true;
+        if (agent.isOnNavMesh)
+            agent.isStopped = true;
         agent.Warp(new Vector3(0, -500, 0)); // Move to a "limbo" position
         // limbo... limbo... limbo....
     }
