@@ -14,7 +14,7 @@ public class Journal : MonoBehaviour
     void Awake()
     {
         if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        else Destroy(gameObject); 
     }
 
 
@@ -22,6 +22,7 @@ public class Journal : MonoBehaviour
 
     public void PauseGame()
     {
+        Player.Instance.anim.SetTrigger("ToggleMenu");
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -35,6 +36,7 @@ public class Journal : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Player.Instance._playerInput.SwitchCurrentActionMap("Player");
+        Player.Instance.anim.SetTrigger("ToggleMenu");
         menus[0].SetActive(false);
     }
 

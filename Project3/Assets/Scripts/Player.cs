@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
     [Header("UI References")]
     public Slider staminaSlider;
     public Slider sanitySlider;
+    public Animator anim;
 
     // Singleton Instance
     public static Player Instance { get; private set; }
@@ -64,6 +65,7 @@ public class Player : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
         _input = GetComponent<StarterAssetsInputs>();
         _controller = GetComponent<FirstPersonController>();
+        anim = GetComponent<Animator>();
 
         HS.Init(this, "Catacombs");
 

@@ -1160,6 +1160,7 @@ GameObject:
   - component: {fileID: 507420314}
   - component: {fileID: 507420313}
   - component: {fileID: 507420312}
+  - component: {fileID: 507420315}
   m_Layer: 5
   m_Name: QuitGame
   m_TagString: Untagged
@@ -1281,6 +1282,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507420310}
   m_CullTransparentMesh: 1
+--- !u!114 &507420315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507420310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fbffc5df623954097705621a4dde02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
+  clickSound: {fileID: 8300000, guid: fd28b7d5b84cb204da0513bafea9a7ae, type: 3}
+  hoverSound: {fileID: 8300000, guid: 8a8b50afde028ee4fae2421399568ed3, type: 3}
+  volume: 1
+  playHoverOnce: 1
 --- !u!1 &559434878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,51 +2262,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050184060}
   m_CullTransparentMesh: 1
---- !u!1 &1066106577
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1066106579}
-  - component: {fileID: 1066106578}
-  m_Layer: 0
-  m_Name: 19db8973-8085-46d6-b1ca-cce2ba035c86
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1066106578
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066106577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &1066106579
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066106577}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1080671247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,6 +2364,7 @@ GameObject:
   - component: {fileID: 1094019418}
   - component: {fileID: 1094019417}
   - component: {fileID: 1094019416}
+  - component: {fileID: 1094019419}
   m_Layer: 5
   m_Name: Begin
   m_TagString: Untagged
@@ -2513,6 +2486,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094019414}
   m_CullTransparentMesh: 1
+--- !u!114 &1094019419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094019414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fbffc5df623954097705621a4dde02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
+  clickSound: {fileID: 8300000, guid: fd28b7d5b84cb204da0513bafea9a7ae, type: 3}
+  hoverSound: {fileID: 8300000, guid: 8a8b50afde028ee4fae2421399568ed3, type: 3}
+  volume: 1
+  playHoverOnce: 1
 --- !u!1 &1162944371
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,6 +2514,7 @@ GameObject:
   - component: {fileID: 1162944375}
   - component: {fileID: 1162944374}
   - component: {fileID: 1162944373}
+  - component: {fileID: 1162944376}
   m_Layer: 5
   m_Name: Back Button
   m_TagString: Untagged
@@ -2646,6 +2636,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162944371}
   m_CullTransparentMesh: 1
+--- !u!114 &1162944376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162944371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fbffc5df623954097705621a4dde02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
+  clickSound: {fileID: 8300000, guid: fd28b7d5b84cb204da0513bafea9a7ae, type: 3}
+  hoverSound: {fileID: 8300000, guid: 8a8b50afde028ee4fae2421399568ed3, type: 3}
+  volume: 1
+  playHoverOnce: 1
 --- !u!1 &1176995074
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,51 +4370,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826712833}
   m_CullTransparentMesh: 1
---- !u!1 &1851523705
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1851523707}
-  - component: {fileID: 1851523706}
-  m_Layer: 0
-  m_Name: 725dfd82-ac88-40dd-b06e-450df13d1413
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1851523706
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851523705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &1851523707
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851523705}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852603054
 GameObject:
   m_ObjectHideFlags: 0
@@ -4421,6 +4382,7 @@ GameObject:
   - component: {fileID: 1852603058}
   - component: {fileID: 1852603057}
   - component: {fileID: 1852603056}
+  - component: {fileID: 1852603059}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -4542,6 +4504,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852603054}
   m_CullTransparentMesh: 1
+--- !u!114 &1852603059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852603054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fbffc5df623954097705621a4dde02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
+  clickSound: {fileID: 8300000, guid: fd28b7d5b84cb204da0513bafea9a7ae, type: 3}
+  hoverSound: {fileID: 8300000, guid: 8a8b50afde028ee4fae2421399568ed3, type: 3}
+  volume: 1
+  playHoverOnce: 1
 --- !u!1 &1854203139
 GameObject:
   m_ObjectHideFlags: 0
@@ -5553,5 +5531,3 @@ SceneRoots:
   - {fileID: 1740614232}
   - {fileID: 940062847}
   - {fileID: 1317154165}
-  - {fileID: 1851523707}
-  - {fileID: 1066106579}
