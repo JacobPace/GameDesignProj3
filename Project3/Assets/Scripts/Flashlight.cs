@@ -7,6 +7,8 @@ public class Flashlight : MonoBehaviour
     public float maxPowerTime = 60f; // Seconds the flashlight lasts
     public float currentPower;
     public Light lightSource;
+    [SerializeField] private AudioClip batteryInsert;
+    [SerializeField] private AudioClip batteryZap;
 
     public static Flashlight Instance { get; private set; }
 
@@ -46,6 +48,7 @@ public class Flashlight : MonoBehaviour
 
     void PowerOut()
     {
+        SoundFXManager.instance.PlaySoundFXClip(batteryZap, transform, 1f);
         isOn = false;
         currentPower = 0;
         lightSource.enabled = false;
@@ -58,6 +61,7 @@ public class Flashlight : MonoBehaviour
         {
             if (Player.Instance.inventory.TryUseItem("Battery"))
             {
+                SoundFXManager.instance.PlaySoundFXClip(batteryInsert, transform, 1f);
                 currentPower = maxPowerTime;
                 Debug.Log("Recharged Flashlight!");
                 return;
