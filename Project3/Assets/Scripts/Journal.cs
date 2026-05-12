@@ -8,6 +8,7 @@ public class Journal : MonoBehaviour
     [Header("Inventory Text UI")]
     public TextMeshProUGUI batteryCountText;
     public TextMeshProUGUI collectibleCountText;
+    public TextMeshProUGUI tapeCountText;
     public static Journal Instance { get; private set; }
 
     void Awake()
@@ -43,6 +44,7 @@ public class Journal : MonoBehaviour
         {
             batteryCountText.text = $"Batteries: {Player.Instance.inventory.GetCount("Battery")}";
             collectibleCountText.text = $"Collectibles: {Player.Instance.inventory.GetCount("Collectible")}";
+            tapeCountText.text = $"Found Tapes: {Player.Instance.inventory.TotalTapesCollected()}";
         }
     }
     public void QuitGame() => Application.Quit();

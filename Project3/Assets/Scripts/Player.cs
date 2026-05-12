@@ -21,19 +21,25 @@ public class Player : MonoBehaviour
     public float stamina;
     public float staminaDrain = 25f;
     public float staminaRegen = 10f;
+
+    [Header("Sanity System")]
     public float sanity = 100f;
+    public float drainRate = 0f;
+    [Header("Sanity Drain Rate per Difficulty")]
+    public float easyDrainRate = 0.5f;
+    public float normalDrainRate = 1f;
+    public float hardDrainRate = 2f;
+
+    [Header("Other Settings")]
     public LayerMask lightLayer;
     public GameObject winZone;
 
     [Header("Inventory Settings")]
     public Inventory inventory;
 
-    [Header("Sanity Drain Rate per Difficulty")]
-    public float easyDrainRate = 0.5f;
-    public float normalDrainRate = 1f;
-    public float hardDrainRate = 2f;
-
-    public float drainRate = 0f;
+    [Header("UI References")]
+    public Slider staminaSlider;
+    public Slider sanitySlider;
 
     // Singleton Instance
     public static Player Instance { get; private set; }
@@ -51,8 +57,6 @@ public class Player : MonoBehaviour
     public String PlayerName = null;
     public String inputScore = null;
 
-
-
     private void Awake()
     {
         Instance = this;
@@ -64,15 +68,17 @@ public class Player : MonoBehaviour
         HS.Init(this, "Catacombs");
 
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         stamina = maxStamina;
+        if (staminaSlider != null) staminaSlider.maxValue = maxStamina;
+        if (sanitySlider != null) sanitySlider.maxValue = 100f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         // Current Action Map check
@@ -88,16 +94,18 @@ public class Player : MonoBehaviour
                     _input.sprint = false; // Force stop sprint
                 }
             }
-            else if (stamina < maxStamina) stamina += staminaRegen * Time.deltaTime;
+            else
+            {
+                _input.sprint = false;
+                if (stamina < maxStamina)
+                    stamina += staminaRegen * Time.deltaTime;
+            }
 
             if (_playerInput.actions["Flashlight"].triggered)
-            {
                 Flashlight.Instance.ToggleFlashlight();
-            }
             if (_playerInput.actions["Recharge"].triggered)
-            {
                 Flashlight.Instance.Recharge();
-            }
+            
 
             stamina = Mathf.Clamp(stamina, 0, maxStamina);
         }
@@ -106,6 +114,8 @@ public class Player : MonoBehaviour
 
         // Pausing
         if (_playerInput.actions["Pause"].triggered) Journal.Instance.PauseGame();
+
+        UpdatePlayerUI();
 
     }
 
@@ -119,31 +129,33 @@ public class Player : MonoBehaviour
         HS.Clear(this);
     }
 
+    private void UpdatePlayerUI()
+    {
+        if (staminaSlider != null) staminaSlider.value = stamina;
+        if (sanitySlider != null) sanitySlider.value = sanity;
+    }
+
+    private int _lightOverlapCount = 0;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject == winZone) HandleWinCondition();
+        if (((1 << other.gameObject.layer) & lightLayer) != 0)
+            _lightOverlapCount++;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (((1 << other.gameObject.layer) & lightLayer) != 0)
+            _lightOverlapCount--;
+    }
     public void UpdateSanity()
     {
-        int numFound = Physics.OverlapSphereNonAlloc(transform.position, 20f, _lightResults, lightLayer, QueryTriggerInteraction.Collide);
-
-        bool isInLight = false;
-
-        for (int i = 0; i < numFound; i++)
-        {
-            Collider lightCollider = _lightResults[i];
-
-            if (!Physics.Linecast(lightCollider.transform.position, transform.position + Vector3.up))
-            {
-                isInLight = true;
-                break;
-            }
-        }
-
-        if (isInLight)
-        {
-            sanity += 2f * drainRate * Time.deltaTime;
-        }
+        if (_lightOverlapCount > 0)
+            sanity += 2.0f * drainRate * Time.deltaTime;
         else
-        {
-            sanity -= 5f * drainRate * Time.deltaTime;
-        }
+            sanity -= 0.5f * drainRate * Time.deltaTime;
+
         sanity = Mathf.Clamp(sanity, 0, 100);
     }
 
@@ -169,52 +181,63 @@ public class Player : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject == winZone)
-        {
-            HandleWinCondition();
-        }
-    }
-
 }
 
 [System.Serializable]
 public class Inventory
 {
-    private Dictionary<string, int> _items;
+    private Dictionary<string, int> _stackableItems;
+    private HashSet<string> _uniqueTapes;
 
     // Helper method to ensure the dictionary exists
     private void EnsureDictionary()
     {
-        if (_items == null)
-        {
-            _items = new Dictionary<string, int>
+        _stackableItems ??= new Dictionary<string, int>
             {
                 { "Battery", 0 },
                 { "Collectible", 0 }
             };
+        _uniqueTapes ??= new();
+    }
+
+    /// <summary>
+    /// Overload for unique items/tapes
+    /// </summary>
+    /// <param name="tapeID"></param>
+    /// <param name="type"></param>
+    public void AddItem(string tapeID, ItemType type)
+    {
+        EnsureDictionary();
+        if (type == ItemType.VideoTape && !_uniqueTapes.Contains(tapeID))
+        {
+            _uniqueTapes.Add(tapeID);
+            Debug.Log($"Inventory: Unique tape added: {tapeID}");
         }
     }
 
+    /// <summary>
+    /// Overload for stackable items
+    /// </summary>
+    /// <param name="itemName"></param>
+    /// <param name="amount"></param>
     public void AddItem(string itemName, int amount)
     {
         EnsureDictionary();
 
-        if (_items.ContainsKey(itemName))
-            _items[itemName] += amount;
+        if (_stackableItems.ContainsKey(itemName))
+            _stackableItems[itemName] += amount;
         else
-            _items[itemName] = amount;
+            _stackableItems[itemName] = amount;
 
-        Debug.Log($"Inventory: Added {amount} {itemName}. Total: {_items[itemName]}");
+        Debug.Log($"Inventory: Added {amount} {itemName}. Total: {_stackableItems[itemName]}");
     }
 
     public bool TryUseItem(string itemName)
     {
         EnsureDictionary();
-        if (_items.ContainsKey(itemName) && _items[itemName] > 0)
+        if (_stackableItems.ContainsKey(itemName) && _stackableItems[itemName] > 0)
         {
-            _items[itemName]--;
+            _stackableItems[itemName]--;
             return true;
         }
         return false;
@@ -223,8 +246,11 @@ public class Inventory
     public int GetCount(string itemName)
     {
         EnsureDictionary();
-        return _items.ContainsKey(itemName) ? _items[itemName] : 0;
+        return _stackableItems.ContainsKey(itemName) ? _stackableItems[itemName] : 0;
     }
+
+    public int TotalTapesCollected() => _uniqueTapes?.Count ?? 0;
+
 }
 /*
 Dev Notes:

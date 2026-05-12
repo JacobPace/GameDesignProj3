@@ -1,7 +1,8 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public interface IInteractable { public void Interact(); }
+public interface IInteractable { public string InteractionPrompt { get; } public void Interact(); }
 
 public class Interactor : MonoBehaviour
 {
@@ -12,58 +13,46 @@ public class Interactor : MonoBehaviour
     [Header("UI Reference")]
     public GameObject interactionPrompt;
 
-    private Outline _lastOutline; // Store reference to current outline
+    private Outline _lastOutline;
 
     void Update()
     {
-        // Only run if the action map is "Player"
-        if (Player.Instance._playerInput.currentActionMap.name == "Player")
+        if (Player.Instance._playerInput.currentActionMap.name != "Player") return;
+
+        Ray ray = new(InteractorSource.position, InteractorSource.forward);
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, InteractRange, interactableLayer))
         {
-            Ray ray = new(InteractorSource.position, InteractorSource.forward);
+            IInteractable interactObject = hitInfo.collider.GetComponentInParent<IInteractable>();
+            if (!hitInfo.collider.TryGetComponent(out Outline currentOutline)) currentOutline = hitInfo.collider.GetComponentInParent<Outline>();
+            hitInfo.collider.TryGetComponent(out StationManager station);
 
-            if (Physics.Raycast(ray, out RaycastHit hitInfo, InteractRange, interactableLayer))
+            bool isDisabled = (station != null && station._hasBeenUsed);
+
+            if (currentOutline != null && !isDisabled)
             {
-                StationManager station = hitInfo.collider.GetComponentInParent<StationManager>();
-                Outline currentOutline = hitInfo.collider.GetComponentInParent<Outline>();
-
-                // Hide outline if the interactable has already been used
-                bool isDisabled = (station != null && station._hasBeenUsed);
-
-                // Manage Outline Visibility
-                if (currentOutline != _lastOutline || (isDisabled && _lastOutline != null))
+                if (_lastOutline != currentOutline)
                 {
                     ClearInteraction();
-
-                    if (currentOutline != null && !isDisabled)
+                    currentOutline.enabled = true;
+                    _lastOutline = currentOutline;
+                    if (interactionPrompt != null)
                     {
-                        currentOutline.enabled = true;
-                        _lastOutline = currentOutline;
-                        if (interactionPrompt != null) interactionPrompt.SetActive(true);
+                        var promptTMP = interactionPrompt.GetComponentInChildren<TextMeshProUGUI>();
+                        if (promptTMP != null) promptTMP.text = interactObject.InteractionPrompt;
+                        interactionPrompt.SetActive(true);
                     }
-                    
-                }
-
-                if (Player.Instance._playerInput.actions["Interact"].WasPressedThisFrame())
-                {
-                    IInteractable interactObject = hitInfo.collider.GetComponentInParent<IInteractable>();
-
-                    if (interactObject != null && !isDisabled) interactObject.Interact();
                 }
             }
-            else
-            {
-                ClearInteraction();
-            }
+            else ClearInteraction();
+            if (Player.Instance._playerInput.actions["Interact"].WasPressedThisFrame()) if (interactObject != null && !isDisabled) interactObject.Interact();
         }
+        else ClearInteraction();
     }
 
     private void ClearInteraction()
     {
-        if (_lastOutline != null)
-        {
-            _lastOutline.enabled = false;
-            _lastOutline = null;
-        }
+        if (_lastOutline != null) _lastOutline.enabled = false;
+        _lastOutline = null;
         if (interactionPrompt != null) interactionPrompt.SetActive(false);
     }
 }
