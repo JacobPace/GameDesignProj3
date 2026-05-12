@@ -15,8 +15,7 @@ public class Wendigooner : MonoBehaviour
     private NavMeshAgent agent;
     private MeshRenderer[] renderers;
 
-    [Header("Sanity & Distance")]
-    [Range(0, 100)] public float playerSanity = 100f; // hook up to actual sanity system
+    [Header("Distance")]
     public float maxStalkDistance = 30f;
     public float minStalkDistance = 10f;
     private float currentTargetDistance;
@@ -29,6 +28,7 @@ public class Wendigooner : MonoBehaviour
     private float _stuckTimer = 0f;
     private float _vanishTimer = 0f;
     private float _logTimer = 0f;
+    private Collider[] _monsterLightResults = new Collider[5];
 
     void Awake()
     {
@@ -47,7 +47,7 @@ public class Wendigooner : MonoBehaviour
             float dist = Vector3.Distance(transform.position, player.position);
             HandleLogging(dist);
 
-            float sanityPercent = 1f - (playerSanity / 100f);
+            float sanityPercent = 1f - (Player.Instance.sanity / 100f);
             UpdateStats(sanityPercent);
 
             if (currentState != MonsterState.Vanished)
@@ -85,8 +85,8 @@ public class Wendigooner : MonoBehaviour
     void DetermineState(float dist)
     {
         if (CheckIfInLight() || IsInPlayerView()) { currentState = MonsterState.Fleeing; return; }
-        if (playerSanity > 70f && dist < (currentTargetDistance - 5f)) { currentState = MonsterState.Hiding; return; }
-        currentState = (playerSanity < 30f && dist < 12f) ? MonsterState.Charging : MonsterState.Stalking;
+        if (Player.Instance.sanity > 70f && dist < (currentTargetDistance - 5f)) { currentState = MonsterState.Hiding; return; }
+        currentState = (Player.Instance.sanity < 30f && dist < 12f) ? MonsterState.Charging : MonsterState.Stalking;
     }
 
     void ExecuteState()
@@ -194,9 +194,24 @@ public class Wendigooner : MonoBehaviour
         if (flash != null && flash.enabled)
         {
             Vector3 dir = (transform.position - flash.transform.position).normalized;
-            if (Vector3.Angle(flash.transform.forward, dir) < flash.spotAngle / 2 && Vector3.Distance(transform.position, flash.transform.position) < flash.range)
-                if (!Physics.Linecast(flash.transform.position, transform.position, obstacleMask)) return true;
+            float dist = Vector3.Distance(transform.position, flash.transform.position);
+
+            if (Vector3.Angle(flash.transform.forward, dir) < flash.spotAngle / 2 && dist < flash.range)
+            {
+                if (!Physics.Linecast(flash.transform.position, transform.position, obstacleMask))
+                    return true;
+            }
         }
-        return Physics.CheckSphere(transform.position, 2.5f, lightLayerMask);
+
+        int numFound = Physics.OverlapSphereNonAlloc(transform.position, 2.5f, _monsterLightResults, lightLayerMask, QueryTriggerInteraction.Collide);
+
+        for (int i = 0; i < numFound; i++)
+        {
+            if (!Physics.Linecast(_monsterLightResults[i].transform.position, transform.position, obstacleMask))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

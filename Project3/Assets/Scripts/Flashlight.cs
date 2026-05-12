@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
     [Header("Settings")]
-    public float maxPowerTime = 30f; // Seconds the flashlight lasts
+    public float maxPowerTime = 60f; // Seconds the flashlight lasts
     public float currentPower;
     public Light lightSource;
 
@@ -32,12 +33,6 @@ public class Flashlight : MonoBehaviour
             currentPower -= Time.deltaTime;
             if (currentPower <= 0) PowerOut();
         }
-
-        // Press 'R' to recharge using an item from the inventory class, can be changed to be done in player script
-        if (Input.GetKeyDown(KeyCode.R) && currentPower < maxPowerTime)
-        {
-            Recharge();
-        }
     }
 
     public void ToggleFlashlight()
@@ -57,14 +52,23 @@ public class Flashlight : MonoBehaviour
         Debug.Log("Flashlight is dead! Use a 'Battery' to recharge.");
     }
 
-    void Recharge()
+    public void Recharge()
     {
-        // Accessing the non-MonoBehaviour class inside the Player script
-        if (Player.Instance.inventory.TryUseItem("Battery"))
+        if (currentPower < maxPowerTime)
         {
-            currentPower = maxPowerTime;
-            Debug.Log("Recharged Flashlight!");
+            if (Player.Instance.inventory.TryUseItem("Battery"))
+            {
+                currentPower = maxPowerTime;
+                Debug.Log("Recharged Flashlight!");
+                return;
+            }
+            else
+            {
+                Debug.Log("No batteries in inventory");
+                return;
+            }
         }
+        else Debug.Log("Flashlight battery is full");
     }
 
 }

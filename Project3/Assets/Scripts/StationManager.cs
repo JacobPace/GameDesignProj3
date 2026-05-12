@@ -14,7 +14,7 @@ public class StationManager : MonoBehaviour, IInteractable
     public LootRange normalRange = new() { min = 1, max = 3 };
     public LootRange hardRange = new() { min = 0, max = 2 };
 
-    private bool _hasBeenUsed = false;
+    public bool _hasBeenUsed = false;
 
     public void Interact()
     {
@@ -27,12 +27,21 @@ public class StationManager : MonoBehaviour, IInteractable
         int finalAmount = CalculateRandomLoot();
         Player.Instance.inventory.AddItem("Battery", finalAmount);
         _hasBeenUsed = true;
-        Debug.Log($"Station gave {finalAmount} items on {GameManager.Instance.currentDifficulty}");
+        string diff = (GameManager.Instance != null)
+            ? GameManager.Instance.currentDifficulty.ToString()
+            : "Unknown (Missing GameManager)";
+
+        Debug.Log($"Station gave {finalAmount} items on {diff}");
         // Logic to change model or color can be done here
     }
 
     private int CalculateRandomLoot()
     {
+        if (GameManager.Instance == null)
+        {
+            Debug.LogWarning("GameManager.Instance is null! Defaulting to Normal range.");
+            return Random.Range(normalRange.min, normalRange.max + 1);
+        }
         var chosenRange = GameManager.Instance.currentDifficulty switch
         {
             GameManager.Difficulty.Easy => easyRange,
