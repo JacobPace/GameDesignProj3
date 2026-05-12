@@ -23,12 +23,12 @@ public class Journal : MonoBehaviour
     public void PauseGame()
     {
         Player.Instance.anim.SetTrigger("ToggleMenu");
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         UpdateInventoryUI();
         Player.Instance._playerInput.SwitchCurrentActionMap("UI");
-        menus[0].SetActive(true);
+        Invoke(nameof(ShowMenu), 2f);
     }
     public void ResumeGame()
     {
@@ -49,5 +49,12 @@ public class Journal : MonoBehaviour
             tapeCountText.text = $"Found Tapes: {Player.Instance.inventory.TotalTapesCollected()}";
         }
     }
+
+    public void ShowMenu()
+    {
+        Time.timeScale = 0;
+        menus[0].SetActive(true);
+    }
+
     public void QuitGame() => Application.Quit();
 }
