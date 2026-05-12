@@ -78,6 +78,20 @@ public class Player : MonoBehaviour
         if (sanitySlider != null) sanitySlider.maxValue = 100f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        var allRenderers = UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsSortMode.None);
+
+        foreach (Renderer r in allRenderers)
+        {
+            // Only add the script if it isn't already there
+            if (!r.gameObject.GetComponent<Outline>())
+            {
+                var outline = r.gameObject.AddComponent<Outline>();
+
+                // Explicitly use Unity's color to avoid conflicts
+                outline.OutlineColor = UnityEngine.Color.yellow;
+                outline.OutlineWidth = 5f;
+            }
+        }
     }
 
     
