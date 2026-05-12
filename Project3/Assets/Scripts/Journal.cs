@@ -8,12 +8,13 @@ public class Journal : MonoBehaviour
     [Header("Inventory Text UI")]
     public TextMeshProUGUI batteryCountText;
     public TextMeshProUGUI collectibleCountText;
+    public TextMeshProUGUI tapeCountText;
     public static Journal Instance { get; private set; }
 
     void Awake()
     {
         if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        else Destroy(gameObject); 
     }
 
 
@@ -21,12 +22,13 @@ public class Journal : MonoBehaviour
 
     public void PauseGame()
     {
-        Time.timeScale = 0;
+        Player.Instance.anim.SetTrigger("ToggleMenu");
+        //Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         UpdateInventoryUI();
         Player.Instance._playerInput.SwitchCurrentActionMap("UI");
-        menus[0].SetActive(true);
+        Invoke(nameof(ShowMenu), 2f);
     }
     public void ResumeGame()
     {
@@ -34,6 +36,7 @@ public class Journal : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Player.Instance._playerInput.SwitchCurrentActionMap("Player");
+        Player.Instance.anim.SetTrigger("ToggleMenu");
         menus[0].SetActive(false);
     }
 
@@ -43,7 +46,15 @@ public class Journal : MonoBehaviour
         {
             batteryCountText.text = $"Batteries: {Player.Instance.inventory.GetCount("Battery")}";
             collectibleCountText.text = $"Collectibles: {Player.Instance.inventory.GetCount("Collectible")}";
+            tapeCountText.text = $"Found Tapes: {Player.Instance.inventory.TotalTapesCollected()}";
         }
     }
+
+    public void ShowMenu()
+    {
+        Time.timeScale = 0;
+        menus[0].SetActive(true);
+    }
+
     public void QuitGame() => Application.Quit();
 }

@@ -1,7 +1,11 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Outline))]
 public class StationManager : MonoBehaviour, IInteractable
 {
+    [SerializeField] private string promptText = "Press 'E' to Interact";
+    public string InteractionPrompt => promptText;
+
     [System.Serializable]
     public struct LootRange
     {
