@@ -7,9 +7,8 @@ public class Flashlight : MonoBehaviour
     public float maxPowerTime = 60f; // Seconds the flashlight lasts
     public float currentPower;
     public Light lightSource;
-    [SerializeField] private AudioClip batteryInsert;
-    [SerializeField] private AudioClip batteryZap;
-
+    [SerializeField] private AudioClip batteryInsert, batteryZap, flashClick;
+   
     public static Flashlight Instance { get; private set; }
 
     private bool isOn;
@@ -34,6 +33,7 @@ public class Flashlight : MonoBehaviour
         {
             currentPower -= Time.deltaTime;
             if (currentPower <= 0) PowerOut();
+            lightSource.intensity = currentPower;
         }
     }
 
@@ -44,6 +44,8 @@ public class Flashlight : MonoBehaviour
             isOn = !isOn;
             lightSource.enabled = isOn;
         }
+
+        SoundFXManager.instance.PlaySoundFXClip(flashClick, transform, 1f);
     }
 
     void PowerOut()
