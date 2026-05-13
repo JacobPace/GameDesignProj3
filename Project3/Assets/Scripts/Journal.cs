@@ -1,5 +1,6 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Journal : MonoBehaviour
 {
@@ -79,5 +80,5 @@ public class Journal : MonoBehaviour
         menus[0].SetActive(true);
     }
 
-    public void QuitGame() => Application.Quit();
+    public void ReturnToTitle() => SceneManager.LoadScene("TitleScene");
 }
