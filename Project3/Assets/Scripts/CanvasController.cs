@@ -30,6 +30,5 @@ public class CanvasController : MonoBehaviour
         winScreen.SetActive(true);
     }
 
-    public void ReturnToTitle() => SceneManager.LoadScene("TitleScene");
-    public void QuitGame() => Application.Quit();
+    
 }

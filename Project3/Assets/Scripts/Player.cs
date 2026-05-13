@@ -1,4 +1,3 @@
-using HighScore;
 using StarterAssets;
 using System;
 using System.Collections.Generic;
@@ -13,6 +12,7 @@ using static StationManager;
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(StarterAssetsInputs))]
 [RequireComponent(typeof(FirstPersonController))]
+[RequireComponent(typeof(Animator))]
 public class Player : MonoBehaviour
 {
     // Public Fields
@@ -42,21 +42,20 @@ public class Player : MonoBehaviour
     public Slider sanitySlider;
     public Animator anim;
 
+    [Header("Dev Cheats")]
+    public GameObject devCheat;
+
     // Singleton Instance
     public static Player Instance { get; private set; }
 
-
-    // Private Fields
-    private Collider[] _lightResults = new Collider[10];
-
     // Input Systems
+    [HideInInspector]
     public PlayerInput _playerInput;
     public StarterAssetsInputs _input;
     public FirstPersonController _controller;
 
-    //ScoreStuff
-    public String PlayerName = null;
-    public String inputScore = null;
+    // Private Fields
+    private readonly Collider[] _lightResults = new Collider[10];
 
     private void Awake()
     {
@@ -66,9 +65,6 @@ public class Player : MonoBehaviour
         _input = GetComponent<StarterAssetsInputs>();
         _controller = GetComponent<FirstPersonController>();
         anim = GetComponent<Animator>();
-
-        HS.Init(this, "Catacombs");
-
     }
     
     void Start()
@@ -78,6 +74,7 @@ public class Player : MonoBehaviour
         if (sanitySlider != null) sanitySlider.maxValue = 100f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        _playerInput.SwitchCurrentActionMap("Player");
         var allRenderers = UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsSortMode.None);
 
         foreach (Renderer r in allRenderers)
@@ -88,13 +85,12 @@ public class Player : MonoBehaviour
                 var outline = r.gameObject.AddComponent<Outline>();
 
                 // Explicitly use Unity's color to avoid conflicts
-                outline.OutlineColor = UnityEngine.Color.yellow;
+                outline.OutlineColor = UnityEngine.Color.white;
                 outline.OutlineWidth = 5f;
             }
         }
     }
 
-    
     void Update()
     {
         // Current Action Map check
@@ -133,16 +129,8 @@ public class Player : MonoBehaviour
 
         UpdatePlayerUI();
 
-    }
+        if (_playerInput.actions["DevCheats"].triggered) TeleportToExit();
 
-    public void SubmitScore()
-    {
-        HS.SubmitHighScore(this, PlayerName, int.Parse(inputScore));
-    }
-
-    public void ClearScores()
-    {
-        HS.Clear(this);
     }
 
     private void UpdatePlayerUI()
@@ -193,10 +181,12 @@ public class Player : MonoBehaviour
 
     public void HandleWinCondition()
     {
-        Debug.Log("Victory! Player reached the win zone.");
-        
+        ScoreManager.Instance.WonGame();
     }
-
+    public void TeleportToExit()
+    {
+        this.transform.position = devCheat.transform.position;
+    }
 }
 
 [System.Serializable]

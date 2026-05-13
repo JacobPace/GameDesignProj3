@@ -50,6 +50,35 @@ public class Journal : MonoBehaviour
         }
     }
 
+    public void WonGameMenu()
+    {
+        // Force close standard pause menus to prevent layout overlap
+        menus[0].SetActive(false);
+
+        // Calculate data safely via ScoreManager before opening layouts
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.CalculateScore();
+        }
+
+        // Initialize hardware interactions using your verified system parameters
+        Player.Instance.anim.SetTrigger("ToggleMenu");
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        Player.Instance._playerInput.SwitchCurrentActionMap("UI");
+
+        // Open the Win Panel layout directly without any Coroutine conflicts
+        menus[3].SetActive(true);
+
+        // Force text element selection focus safely now that the canvas layer is awake
+        if (ScoreManager.Instance != null && ScoreManager.Instance.playerNameInput != null)
+        {
+            ScoreManager.Instance.playerNameInput.Select();
+            ScoreManager.Instance.playerNameInput.ActivateInputField();
+        }
+    }
+
     public void ShowMenu()
     {
         Time.timeScale = 0;
