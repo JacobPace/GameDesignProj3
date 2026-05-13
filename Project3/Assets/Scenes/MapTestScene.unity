@@ -14231,7 +14231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 558312654222797247, guid: 17194ec4b85c7554d8e0cb42d27316df, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.18
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 558312654222797247, guid: 17194ec4b85c7554d8e0cb42d27316df, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14285,6 +14285,14 @@ PrefabInstance:
       propertyPath: playerObstacle
       value: 
       objectReference: {fileID: 1662760761}
+    - target: {fileID: 2917408693597623358, guid: 17194ec4b85c7554d8e0cb42d27316df, type: 3}
+      propertyPath: m_Intensity
+      value: 0.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146656740652745464, guid: 17194ec4b85c7554d8e0cb42d27316df, type: 3}
+      propertyPath: m_Intensity
+      value: 0.075
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
