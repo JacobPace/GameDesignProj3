@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
     public Slider staminaSlider;
     public Slider sanitySlider;
     public Animator anim;
+    public GameObject VideoMenu;
 
     [Header("Dev Cheats")]
     public GameObject devCheat;
@@ -218,6 +219,15 @@ public class Inventory
         {
             _uniqueTapes.Add(tapeID);
             Debug.Log($"Inventory: Unique tape added: {tapeID}");
+
+            Player.Instance.anim.SetTrigger("ToggleVideo");
+            // Delay Pause by 2f
+            // Activate UI
+            // Find the number of tapes currently in possesion
+            // Call video from list to play on UI
+            // Once video is over (Probably a next button) close the menu
+            // Play the animation to put video camera down
+            // Resume game
         }
     }
 

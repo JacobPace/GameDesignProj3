@@ -19,7 +19,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
-        HS.Init(this, "Catacombs");
+        HS.Init(this, "The Ossuary");
         score = 0;
         playerNameInput.text = "";
         scoreErrorDisplay.gameObject.SetActive(false);
@@ -45,11 +45,12 @@ public class ScoreManager : MonoBehaviour
                 GameManager.Difficulty.Easy => 0.75f,
                 GameManager.Difficulty.Normal => 1,
                 GameManager.Difficulty.Hard => 2,
-                _ => 2,
+                _ => 1,
             };
         }
         // time bonus -> max bonus is from completion within 20 mins
-        score = (int)(collectibleBonus * diffMult);
+        //score = (int)(collectibleBonus * diffMult);
+        score = 67_420;
     }
 
     public void SubmitScore()
@@ -61,6 +62,7 @@ public class ScoreManager : MonoBehaviour
         else
         {
             HS.SubmitHighScore(this, playerNameInput.text, score);
+            SceneManager.LoadScene("Title");
         }
     }
 
@@ -89,6 +91,6 @@ public class ScoreManager : MonoBehaviour
         scoreErrorDisplay.gameObject.SetActive(false);
         errorCoroutine = null;
     }
-    public void ReturnToTitle() => SceneManager.LoadScene("TitleScene");
+    public void ReturnToTitle() => SceneManager.LoadScene("Title");
     public void QuitGame() => Application.Quit();
 }

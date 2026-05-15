@@ -1,7 +1,7 @@
 using Unity.Cinemachine;
 using UnityEngine;
 
-public enum ItemType { Collectible, VideoTape }
+public enum ItemType { Collectible, VideoTape, Camcorder }
 /// <summary>
 /// This script can be attached to a collectible or a video tape
 /// Set the type in the inspector accordingly
@@ -18,12 +18,18 @@ public class Item : MonoBehaviour, IInteractable
 
     public string ItemTag => optionalTag;
     public ItemType Type => type;
+    public CameraShaderScript effect;
 
     public void Interact()
     {
         Debug.Log($"Interacted with {gameObject.name}. Removing from scene.");
         if (type == ItemType.VideoTape) Player.Instance.inventory.AddItem(optionalTag, type);
         else if (type == ItemType.Collectible) Player.Instance.inventory.AddItem("Collectible", 1);
+        else if (type == ItemType.Camcorder)
+        {
+            Player.Instance.inventory.AddItem("Camcorder", 1);
+            effect.EnableEffect();
+        }
         Destroy(gameObject);
     }
 
