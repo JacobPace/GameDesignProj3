@@ -80,5 +80,5 @@ public class Journal : MonoBehaviour
         menus[0].SetActive(true);
     }
 
-    public void ReturnToTitle() => SceneManager.LoadScene("TitleScene");
+    public void ReturnToTitle() => SceneManager.LoadScene("Title");
 }

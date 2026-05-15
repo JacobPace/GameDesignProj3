@@ -1,38 +1,53 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
 public class Flashlight : MonoBehaviour
 {
     [Header("Settings")]
     public float maxPowerTime = 60f; // Seconds the flashlight lasts
     public float currentPower;
     public Light lightSource;
-    [SerializeField] private AudioClip batteryInsert, batteryZap, flashClick;
-   
-    public static Flashlight Instance { get; private set; }
 
+    [Header("Detection Components")]
+    [Tooltip("The capsule collider assigned to the FlashlightTrigger layer")]
+    public Collider flashlightTriggerCollider;
+
+    [SerializeField] private AudioClip batteryInsert, batteryZap, flashClick;
+
+    public static Flashlight Instance { get; private set; }
     private bool isOn;
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null) Instance = this;
+        if (flashlightTriggerCollider == null)
+            flashlightTriggerCollider = GetComponent<Collider>();
+
+        if (flashlightTriggerCollider != null && !flashlightTriggerCollider.isTrigger)
+        {
+            Debug.LogWarning($"<b>[Flashlight]</b> Collider on {gameObject.name} was not set to 'Is Trigger'! Fixing automatically.", this);
+            flashlightTriggerCollider.isTrigger = true;
+        }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentPower = maxPowerTime;
         lightSource.enabled = false;
         isOn = false;
+        if (flashlightTriggerCollider != null)
+            flashlightTriggerCollider.enabled = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isOn && currentPower > 0)
         {
             currentPower -= Time.deltaTime;
-            if (currentPower <= 0) PowerOut();
+            if (currentPower <= 0)
+                PowerOut();
+
             lightSource.intensity = currentPower;
         }
     }
@@ -43,8 +58,10 @@ public class Flashlight : MonoBehaviour
         {
             isOn = !isOn;
             lightSource.enabled = isOn;
-        }
 
+            if (flashlightTriggerCollider != null)
+                flashlightTriggerCollider.enabled = isOn;
+        }
         SoundFXManager.instance.PlaySoundFXClip(flashClick, transform, 1f);
     }
 
@@ -54,6 +71,10 @@ public class Flashlight : MonoBehaviour
         isOn = false;
         currentPower = 0;
         lightSource.enabled = false;
+
+        if (flashlightTriggerCollider != null)
+            flashlightTriggerCollider.enabled = false;
+
         Debug.Log("Flashlight is dead! Use a 'Battery' to recharge.");
     }
 
@@ -74,7 +95,7 @@ public class Flashlight : MonoBehaviour
                 return;
             }
         }
-        else Debug.Log("Flashlight battery is full");
+        else
+            Debug.Log("Flashlight battery is full");
     }
-
 }
