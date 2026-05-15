@@ -1,25 +1,9 @@
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class MonsterDetection : MonoBehaviour
 {
-    private MonsterAILogic _aiLogic;
     private readonly HashSet<Collider> _activeLightColliders = new();
-    private bool _isCurrentlyFlashed = false;
-
-    public bool WasHitByFlashlight => _isCurrentlyFlashed;
-
-    private void Awake()
-    {
-        _aiLogic = GetComponent<MonsterAILogic>();
-    }
-
-    private void FixedUpdate()
-    {
-        // Reset every physics tick. If OnTriggerStay doesn't keep setting it, it drops to false.
-        _isCurrentlyFlashed = false;
-    }
 
     public bool IsInsideAmbientSafeZoneLight()
     {
@@ -27,32 +11,56 @@ public class MonsterDetection : MonoBehaviour
         return _activeLightColliders.Count > 0;
     }
 
-    public bool IsVisibleOnPlayerScreen(Camera playerCamera)
+    /// <summary>
+    /// Checks if the monster is within a valid proximity range, on the player's screen, and has an un-occluded line of sight.
+    /// </summary>
+    public bool IsVisibleOnPlayerScreen(Camera playerCamera, LayerMask obstacleMask, float maxRangeCheck)
     {
         if (playerCamera == null) return false;
+
         Vector3 targetChestLevel = transform.position + (Vector3.up * 1.2f);
+        float distanceToPlayer = Vector3.Distance(playerCamera.transform.position, targetChestLevel);
+
+        // If the monster is further away than the maximum sight range, ignore the check
+        if (distanceToPlayer > maxRangeCheck) return false;
+
+        // Is it physically within the monitor's rendering borders?
         Vector3 viewportPoint = playerCamera.WorldToScreenPoint(targetChestLevel);
-        return viewportPoint.z > 0 && viewportPoint.x >= 0 && viewportPoint.x <= Screen.width && viewportPoint.y >= 0 && viewportPoint.y <= Screen.height;
-    }
+        bool withinScreenMargins = viewportPoint.z > 0 &&
+                                   viewportPoint.x >= 0 && viewportPoint.x <= Screen.width &&
+                                   viewportPoint.y >= 0 && viewportPoint.y <= Screen.height;
 
-    // =========================================================================
-    // NATIVE TRIGGER ENGINE: CHECKS IF FLASHLIGHT IS ON AND HAS LINE OF SIGHT
-    // =========================================================================
-    private void OnTriggerStay(Collider other)
-    {
-        if (Flashlight.Instance == null || other != Flashlight.Instance.flashlightTriggerCollider) return;
+        if (!withinScreenMargins) return false;
 
-        // Line-of-sight wall occlusion check using open layer sweep (~0)
-        Vector3 chestLevel = transform.position + (Vector3.up * 1.2f);
-        Vector3 flashOrigin = Flashlight.Instance.transform.position;
+        // Ensure no solid cave box geometry blocks the view
+        Vector3 eyeLevel = playerCamera.transform.position;
+        LayerMask combinedMask = (obstacleMask.value == 0) ? ~0 : obstacleMask;
 
-        if (Physics.Linecast(flashOrigin, chestLevel, out RaycastHit hit, ~0))
+        if (Physics.Linecast(eyeLevel, targetChestLevel, out RaycastHit hit, combinedMask))
         {
-            if (hit.transform == transform || hit.transform.IsChildOf(transform) || hit.transform == _aiLogic.playerTarget)
+            if (hit.transform != transform && !hit.transform.IsChildOf(transform))
             {
-                _isCurrentlyFlashed = true;
+                return false; // Safely hidden out of view behind something
             }
         }
+
+        // Inside range, visible on monitor frame, and has clear line of sight path
+        return true;
+    }
+
+    public bool EvaluateNodeLightStatus(Vector3 worldPosition, LayerMask lightLayer, LayerMask wallLayer)
+    {
+        Collider[] hitFields = Physics.OverlapSphere(worldPosition, 0.5f, lightLayer, QueryTriggerInteraction.Collide);
+        for (int i = 0; i < hitFields.Length; i++)
+        {
+            if (!Physics.Linecast(hitFields[i].bounds.center, worldPosition, wallLayer)) return true;
+        }
+        return false;
+    }
+
+    public void FlushSensoryCache()
+    {
+        _activeLightColliders.Clear();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -69,11 +77,5 @@ public class MonsterDetection : MonoBehaviour
         {
             if (_activeLightColliders.Contains(other)) _activeLightColliders.Remove(other);
         }
-    }
-
-    public void FlushSensoryCache()
-    {
-        _activeLightColliders.Clear();
-        _isCurrentlyFlashed = false;
     }
 }

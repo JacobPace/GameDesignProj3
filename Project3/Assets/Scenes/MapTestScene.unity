@@ -13505,6 +13505,7 @@ MonoBehaviour:
   staminaSlider: {fileID: 1826465546}
   sanitySlider: {fileID: 1705585697}
   anim: {fileID: 0}
+  VideoMenu: {fileID: 0}
   devCheat: {fileID: 1680621834}
   _playerInput: {fileID: 0}
   _input: {fileID: 0}
@@ -15944,6 +15945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wendigo
       objectReference: {fileID: 0}
+    - target: {fileID: 933466449400197893, guid: 17194ec4b85c7554d8e0cb42d27316df, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1101935344114009537, guid: 17194ec4b85c7554d8e0cb42d27316df, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.25
@@ -16024,6 +16029,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.25
       objectReference: {fileID: 0}
+    - target: {fileID: 7380780738256082434, guid: 17194ec4b85c7554d8e0cb42d27316df, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380780738256082434, guid: 17194ec4b85c7554d8e0cb42d27316df, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8146656740652745464, guid: 17194ec4b85c7554d8e0cb42d27316df, type: 3}
       propertyPath: m_Intensity
       value: 0.075
@@ -16094,11 +16107,21 @@ MonoBehaviour:
   fallbackObstacle: {fileID: 0}
   maxStalkRadius: 30
   minStalkRadius: 10
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 1
+  lightLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  flashlightLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
   currentBehaviorState: 0
   vanishCooldownSeconds: 5
   visualGracePeriodSeconds: 3.5
   physicalMeleeRange: 2
   structuralAttackCooldown: 3
+  maxSightFleeRange: 20
 --- !u!114 &1962979172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19945,3 +19968,4 @@ SceneRoots:
   - {fileID: 891030455}
   - {fileID: 754038169}
   - {fileID: 1879549948}
+  - {fileID: 1668426532}

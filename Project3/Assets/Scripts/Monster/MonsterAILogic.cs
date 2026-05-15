@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using static Wendigooner;
 
 [RequireComponent(typeof(MonsterNavigation))]
 [RequireComponent(typeof(MonsterDetection))]
@@ -20,12 +21,21 @@ public class MonsterAILogic : MonoBehaviour
     public float minStalkRadius = 10f;
     private float _dynamicStalkTargetRadius;
 
+    [Header("Detection Layers")]
+    [Tooltip("The physics layer containing your custom solid cave box wall colliders")]
+    public LayerMask obstacleMask;
+    public LayerMask lightLayerMask;
+    public LayerMask flashlightLayerMask;
+
     [Header("Behavior Control Switches")]
     public AIState currentBehaviorState = AIState.Idle;
     public float vanishCooldownSeconds = 5f;
     public float visualGracePeriodSeconds = 3.5f;
     public float physicalMeleeRange = 2f;
     public float structuralAttackCooldown = 3f;
+
+    [Tooltip("Maximum distance the player can spot the monster to trigger a flee response")]
+    public float maxSightFleeRange = 20f;
 
     private MonsterNavigation _navigation;
     private MonsterDetection _detection;
@@ -109,14 +119,6 @@ public class MonsterAILogic : MonoBehaviour
             _dynamicStalkTargetRadius = Mathf.Lerp(maxStalkRadius, minStalkRadius, currentSanityRatio);
 
             SetMovementStats(currentSanityRatio, literal3DDistance);
-
-            // 2. UNBREAKABLE FLASHLIGHT TRIGGER DETECTION
-            if (_detection.WasHitByFlashlight)
-            {
-                TriggerVanishTransition(vanishCooldownSeconds);
-                yield return TICK_RATE; continue;
-            }
-
             EvaluateTargetBehaviorState(literal3DDistance);
             ExecuteActiveMovementCommands();
             EvaluateCombatAttackStrikes(literal3DDistance);
@@ -137,11 +139,21 @@ public class MonsterAILogic : MonoBehaviour
         }
         else if (currentBehaviorState == AIState.Charging)
         {
-            speed = Mathf.Lerp(6f, 13f, sanityPercent);
+            // =============================================================
+            // BALANCED CHARGING SPEED MODIFIER
+            // =============================================================
+            // CHANGED: Instead of sprinting up to 13m/s, we lock the charge speed 
+            // to a slower, tense pace (e.g., 4.5m/s) to give the player a fair window 
+            // to deploy their flashlight defense.
+            speed = 4.5f;
             stoppingDistance = physicalMeleeRange - 0.2f;
 
-            // KINETIC BRAKE ENGINE: Smoothly decelerates close-range to prevent blowing through the player canvas
-            if (distanceToPlayer < 4.5f) acceleration = 20f;
+            // KINETIC BRAKE ENGINE: Drops acceleration sharply at close range 
+            // to prevent the agent from clipping through the player model capsule.
+            if (distanceToPlayer < 4.5f)
+            {
+                acceleration = 20f;
+            }
         }
         else
         {
@@ -155,20 +167,28 @@ public class MonsterAILogic : MonoBehaviour
     {
         _previousFrameState = currentBehaviorState;
 
-        if (_detection.IsInsideAmbientSafeZoneLight() || (_graceTimer <= 0f && _detection.IsVisibleOnPlayerScreen(playerVisualCamera)))
-        {
-            currentBehaviorState = AIState.Fleeing;
-            return;
-        }
-
         if (Player.Instance.sanity < 45f && distanceToPlayer <= (_dynamicStalkTargetRadius + 6f))
         {
             currentBehaviorState = AIState.Charging;
             return;
         }
 
-        if (distanceToPlayer < (_dynamicStalkTargetRadius - 4f)) currentBehaviorState = AIState.Hiding;
-        else currentBehaviorState = AIState.Stalking;
+        bool canBeSeenByPlayerEyes = (_graceTimer <= 0f) && _detection.IsVisibleOnPlayerScreen(playerVisualCamera, obstacleMask, maxSightFleeRange);
+
+        if (_detection.IsInsideAmbientSafeZoneLight() || canBeSeenByPlayerEyes)
+        {
+            currentBehaviorState = AIState.Fleeing;
+            return;
+        }
+
+        if (distanceToPlayer < (_dynamicStalkTargetRadius - 4f))
+        {
+            currentBehaviorState = AIState.Hiding;
+        }
+        else
+        {
+            currentBehaviorState = AIState.Stalking;
+        }
     }
 
     private void ExecuteActiveMovementCommands()
@@ -364,5 +384,49 @@ public class MonsterAILogic : MonoBehaviour
     {
         ShutdownAIModule();
         Debug.Log("Game Over, you lost");
+    }
+
+    public void ExecuteFlashVanish()
+    {
+        // Prevent double-vanishing if the monster is already hidden away in limbo
+        if (currentBehaviorState == AIState.Vanished) return;
+
+        Debug.Log("<color=purple><b>[Monster Brain]</b></color> Flashlight command received cleanly. Entering Vanished state.");
+        TriggerVanishTransition(vanishCooldownSeconds);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        // Exit instantly if the monster is already safely vanished
+        if (currentBehaviorState == AIState.Vanished) return;
+
+        // Verify the player's flashlight is active, powered, and enabled
+        if (Flashlight.Instance != null && Flashlight.Instance.lightSource != null && Flashlight.Instance.lightSource.enabled)
+        {
+            // Is the child trigger collider touching us part of the flashlight assembly?
+            bool isFlashlightCollider = other == Flashlight.Instance.flashlightTriggerCollider;
+            bool isFlashlightChild = other.transform.IsChildOf(Flashlight.Instance.transform);
+
+            if (isFlashlightCollider || isFlashlightChild)
+            {
+                // Ensure a solid cave wall box isn't blocking the light track
+                Vector3 flashOrigin = Flashlight.Instance.transform.position;
+                Vector3 monsterChest = transform.position + (Vector3.up * 1.2f);
+
+                // Sweeps all layers ignoring trigger zones to check for solid rock walls
+                if (Physics.Linecast(flashOrigin, monsterChest, out RaycastHit hit, ~0, QueryTriggerInteraction.Ignore))
+                {
+                    // If the raycast strikes a cave wall partition before reaching us, the beam is blocked
+                    if (hit.transform != transform && !hit.transform.IsChildOf(transform))
+                    {
+                        return; // Stalking safely out of sight behind environment geometry
+                    }
+                }
+
+                // Contact verified in open air! Force immediate state reset vanish
+                Debug.Log("<color=magenta><b>[Monster AI Handshake]</b></color> Flashlight child trigger detected active beam! Forcing instant vanish.");
+                TriggerVanishTransition(vanishCooldownSeconds);
+            }
+        }
     }
 }
