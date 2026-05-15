@@ -8,8 +8,11 @@ public class ScoreManager : MonoBehaviour
 {
     public int score;
     public TMP_InputField playerNameInput;
+    public TextMeshProUGUI gameOverDisplay;
+    public TextMeshProUGUI scoreDisplay;
     public TextMeshProUGUI scoreErrorDisplay;
-    public GameObject winPanel;
+    public GameObject screen;
+    public GameObject playerUI;
 
     public static ScoreManager Instance { get; private set; }
 
@@ -23,18 +26,23 @@ public class ScoreManager : MonoBehaviour
         score = 0;
         playerNameInput.text = "";
         scoreErrorDisplay.gameObject.SetActive(false);
-        winPanel.SetActive(false);
+        screen.SetActive(false);
+        playerUI.SetActive(true);
     }
 
-    public void WonGame()
+    public void EndGame(bool hasEscaped)
     {
-        if (Journal.Instance != null)
-        {
-            Journal.Instance.WonGameMenu();
-        }
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Player.Instance._playerInput.SwitchCurrentActionMap("UI");
+        score = hasEscaped ? CalculateScore() : (CalculateScore() / 2);
+        gameOverDisplay.text = hasEscaped ? "You Escaped!" : "You Died!!!";
+        scoreDisplay.text = $"Score: {score}";
+        screen.SetActive(true);
+        playerUI.SetActive(false);
     }
 
-    public void CalculateScore()
+    public int CalculateScore()
     {
         int collectibleBonus = Player.Instance.inventory.GetCount("Collectible") * 100;
         float diffMult = 1f;
@@ -49,8 +57,8 @@ public class ScoreManager : MonoBehaviour
             };
         }
         // time bonus -> max bonus is from completion within 20 mins
-        //score = (int)(collectibleBonus * diffMult);
-        score = 67_420;
+        //return (int)(collectibleBonus * diffMult);
+        return 67_420;
     }
 
     public void SubmitScore()

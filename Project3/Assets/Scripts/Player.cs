@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     public float staminaRegen = 10f;
 
     [Header("Sanity System")]
+    public float maxSanity = 100f;
     public float sanity = 100f;
     public float drainRate = 0f;
     [Header("Sanity Drain Rate per Difficulty")]
@@ -71,6 +72,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         stamina = maxStamina;
+        sanity = maxSanity;
         if (staminaSlider != null) staminaSlider.maxValue = maxStamina;
         if (sanitySlider != null) sanitySlider.maxValue = 100f;
         Cursor.lockState = CursorLockMode.Locked;
@@ -144,7 +146,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == winZone) HandleWinCondition();
+        if (other.gameObject == winZone) GameOver(true);
         if (((1 << other.gameObject.layer) & lightLayer) != 0)
             _lightOverlapCount++;
     }
@@ -180,10 +182,29 @@ public class Player : MonoBehaviour
         };
     }
 
-    public void HandleWinCondition()
+    public void GameOver(bool wonGame)
     {
-        ScoreManager.Instance.WonGame();
+        // logic for animations
+
+        if (ScoreManager.Instance == null)
+        {
+            ScoreManager sceneManager = FindFirstObjectByType<ScoreManager>();
+            if (sceneManager != null)
+            {
+                Debug.LogWarning("[Fix Pass] ScoreManager exists in scene, but its Instance variable was NULL. Force-healing reference now.");
+                typeof(ScoreManager).GetProperty("Instance", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.FlattenHierarchy)?.SetValue(null, sceneManager);
+            }
+            else
+            {
+                Debug.LogError("[Fatal Error] ScoreManager script component is completely missing from the entire active scene structure!");
+                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+                return;
+            }
+        }
+        Debug.Log($"[Handshake Complete] Direct call sent to ScoreManager. Target State: {ScoreManager.Instance != null} | Won: {wonGame}");
+        ScoreManager.Instance.EndGame(wonGame);
     }
+
     public void TeleportToExit()
     {
         this.transform.position = devCheat.transform.position;

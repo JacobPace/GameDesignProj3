@@ -18,19 +18,18 @@ public class Journal : MonoBehaviour
         else Destroy(gameObject); 
     }
 
-
     public void ToggleMenu(int menuIndex) => menus[menuIndex].SetActive(!menus[menuIndex].activeSelf);
 
     public void PauseGame()
     {
         Player.Instance.anim.SetTrigger("ToggleMenu");
-        //Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         UpdateInventoryUI();
         Player.Instance._playerInput.SwitchCurrentActionMap("UI");
         Invoke(nameof(ShowMenu), 2f);
     }
+
     public void ResumeGame()
     {
         Time.timeScale = 1f;
@@ -48,29 +47,6 @@ public class Journal : MonoBehaviour
             batteryCountText.text = $"Batteries: {Player.Instance.inventory.GetCount("Battery")}";
             collectibleCountText.text = $"Collectibles: {Player.Instance.inventory.GetCount("Collectible")}";
             tapeCountText.text = $"Found Tapes: {Player.Instance.inventory.TotalTapesCollected()}";
-        }
-    }
-
-    public void WonGameMenu()
-    {
-        menus[0].SetActive(false);
-
-        if (ScoreManager.Instance != null)
-        {
-            ScoreManager.Instance.CalculateScore();
-        }
-        Player.Instance.anim.SetTrigger("ToggleMenu");
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-
-        Player.Instance._playerInput.SwitchCurrentActionMap("UI");
-
-        menus[3].SetActive(true);
-
-        if (ScoreManager.Instance != null && ScoreManager.Instance.playerNameInput != null)
-        {
-            ScoreManager.Instance.playerNameInput.Select();
-            ScoreManager.Instance.playerNameInput.ActivateInputField();
         }
     }
 

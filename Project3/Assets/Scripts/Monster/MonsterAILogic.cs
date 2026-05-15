@@ -33,6 +33,7 @@ public class MonsterAILogic : MonoBehaviour
     public float visualGracePeriodSeconds = 3.5f;
     public float physicalMeleeRange = 2f;
     public float structuralAttackCooldown = 3f;
+    public float flashVanishRange;
 
     [Tooltip("Maximum distance the player can spot the monster to trigger a flee response")]
     public float maxSightFleeRange = 20f;
@@ -84,45 +85,63 @@ public class MonsterAILogic : MonoBehaviour
         while (true)
         {
             if (!_isGlobalAIActive) { yield return TICK_RATE; continue; }
-
-            if (playerTarget == null)
-            {
-                if (Player.Instance != null) playerTarget = Player.Instance.transform;
-                yield return TICK_RATE; continue;
-            }
-
+            if (playerTarget == null) { yield return TICK_RATE; continue; }
             if (currentBehaviorState == AIState.Vanished)
             {
                 ProcessVanishSequence();
                 yield return TICK_RATE; continue;
             }
-
             if (_graceTimer > 0f) _graceTimer -= 0.1f;
-
             _navigation.MatchPlayerFloorHeight(playerTarget.position, 3f);
-
             float literal3DDistance = Vector3.Distance(transform.position, playerTarget.position);
             ProcessTelemetryLogs(literal3DDistance);
-
-            // 1. EMERGENCY PROXIMITY FLEE SYSTEM
             if (currentBehaviorState != AIState.Charging && literal3DDistance < 5.0f)
             {
                 _previousFrameState = currentBehaviorState;
                 currentBehaviorState = AIState.Fleeing;
-                _navigation.StopMovement();
-                _navigation.ResumeMovement();
+                _navigation.StopMovement(); _navigation.ResumeMovement();
                 CompileNextSpatialTrackingDestination(true);
                 yield return TICK_RATE; continue;
             }
+            if (Flashlight.Instance != null && Flashlight.Instance.lightSource != null)
+            {
+                bool isFlashlightToggledOn = (bool)typeof(Flashlight)
+                    .GetField("isOn", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
+                    .GetValue(Flashlight.Instance);
 
+                if (isFlashlightToggledOn && Flashlight.Instance.currentPower > 0.05f)
+                {
+                    Vector3 chestLevel = transform.position + (Vector3.up * 1.2f);
+                    Vector3 cameraPos = playerVisualCamera.transform.position;
+                    float distanceToMonster = Vector3.Distance(cameraPos, chestLevel);
+
+                    if (distanceToMonster <= flashVanishRange) // check if monster is within a configurable range to the player while the flashlight is on
+                    {
+                        Vector3 directionToMonster = (chestLevel - cameraPos).normalized;
+                        float angleToMonster = Vector3.Angle(playerVisualCamera.transform.forward, directionToMonster);
+                        if (angleToMonster < (Flashlight.Instance.lightSource.spotAngle / 1.8f))
+                        {
+                            bool clearAirChannel = true;
+                            if (Physics.Linecast(cameraPos, chestLevel, out RaycastHit hit, ~0, QueryTriggerInteraction.Ignore))
+                                if (hit.transform != transform && !hit.transform.IsChildOf(transform) && hit.transform != playerTarget.root)
+                                    clearAirChannel = false; // Blocked by wall                                
+                            if (clearAirChannel)
+                            {
+                                Debug.Log("<color=magenta><b>[AI Math Check]</b></color> Flashlight aim confirmed via vectors! Forcing vanish.");
+                                TriggerVanishTransition(vanishCooldownSeconds);
+                                yield return TICK_RATE;
+                                continue;
+                            }
+                        }
+                    }
+                }
+            }
             float currentSanityRatio = 1f - (Player.Instance.sanity / 100f);
             _dynamicStalkTargetRadius = Mathf.Lerp(maxStalkRadius, minStalkRadius, currentSanityRatio);
-
             SetMovementStats(currentSanityRatio, literal3DDistance);
             EvaluateTargetBehaviorState(literal3DDistance);
             ExecuteActiveMovementCommands();
             EvaluateCombatAttackStrikes(literal3DDistance);
-
             yield return TICK_RATE;
         }
     }
@@ -134,21 +153,13 @@ public class MonsterAILogic : MonoBehaviour
         float stoppingDistance = 1.5f;
 
         if (currentBehaviorState == AIState.Fleeing)
-        {
             speed = 15f;
-        }
         else if (currentBehaviorState == AIState.Charging)
-        {
-            // =============================================================
-            // BALANCED CHARGING SPEED MODIFIER
-            // =============================================================
-            // CHANGED: Instead of sprinting up to 13m/s, we lock the charge speed 
-            // to a slower, tense pace (e.g., 4.5m/s) to give the player a fair window 
-            // to deploy their flashlight defense.
+        { 
             speed = 4.5f;
             stoppingDistance = physicalMeleeRange - 0.2f;
 
-            // KINETIC BRAKE ENGINE: Drops acceleration sharply at close range 
+            // Drops acceleration sharply at close range 
             // to prevent the agent from clipping through the player model capsule.
             if (distanceToPlayer < 4.5f)
             {
@@ -383,49 +394,42 @@ public class MonsterAILogic : MonoBehaviour
     private void ExecuteGameOverSequence()
     {
         ShutdownAIModule();
-        Debug.Log("Game Over, you lost");
+        if (Player.Instance != null)
+            Player.Instance.GameOver(false);
     }
 
-    public void ExecuteFlashVanish()
+    private void OnTriggerEnter(Collider other)
     {
-        // Prevent double-vanishing if the monster is already hidden away in limbo
-        if (currentBehaviorState == AIState.Vanished) return;
+        // Ensure the player instance configuration script exists on scene boot
+        if (Player.Instance == null) return;
 
-        Debug.Log("<color=purple><b>[Monster Brain]</b></color> Flashlight command received cleanly. Entering Vanished state.");
-        TriggerVanishTransition(vanishCooldownSeconds);
-    }
+        int otherLayer = other.gameObject.layer;
 
-    private void OnTriggerStay(Collider other)
-    {
-        // Exit instantly if the monster is already safely vanished
-        if (currentBehaviorState == AIState.Vanished) return;
-
-        // Verify the player's flashlight is active, powered, and enabled
-        if (Flashlight.Instance != null && Flashlight.Instance.lightSource != null && Flashlight.Instance.lightSource.enabled)
+        // Check if the volume we stepped into belongs to the environment light safe-zone mask
+        if (((1 << otherLayer) & Player.Instance.lightLayer.value) != 0)
         {
-            // Is the child trigger collider touching us part of the flashlight assembly?
-            bool isFlashlightCollider = other == Flashlight.Instance.flashlightTriggerCollider;
-            bool isFlashlightChild = other.transform.IsChildOf(Flashlight.Instance.transform);
-
-            if (isFlashlightCollider || isFlashlightChild)
+            // Tell the detection module to add this volume to its active hash array list
+            if (_detection != null)
             {
-                // Ensure a solid cave wall box isn't blocking the light track
-                Vector3 flashOrigin = Flashlight.Instance.transform.position;
-                Vector3 monsterChest = transform.position + (Vector3.up * 1.2f);
+                // Use this if your MonsterDetection has a public list tracking system:
+                System.Reflection.MethodInfo enterMethod = typeof(MonsterDetection).GetMethod("OnTriggerEnter", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                if (enterMethod != null) enterMethod.Invoke(_detection, new object[] { other });
+            }
+        }
+    }
 
-                // Sweeps all layers ignoring trigger zones to check for solid rock walls
-                if (Physics.Linecast(flashOrigin, monsterChest, out RaycastHit hit, ~0, QueryTriggerInteraction.Ignore))
-                {
-                    // If the raycast strikes a cave wall partition before reaching us, the beam is blocked
-                    if (hit.transform != transform && !hit.transform.IsChildOf(transform))
-                    {
-                        return; // Stalking safely out of sight behind environment geometry
-                    }
-                }
+    private void OnTriggerExit(Collider other)
+    {
+        if (Player.Instance == null) return;
 
-                // Contact verified in open air! Force immediate state reset vanish
-                Debug.Log("<color=magenta><b>[Monster AI Handshake]</b></color> Flashlight child trigger detected active beam! Forcing instant vanish.");
-                TriggerVanishTransition(vanishCooldownSeconds);
+        int otherLayer = other.gameObject.layer;
+
+        if (((1 << otherLayer) & Player.Instance.lightLayer.value) != 0)
+        {
+            if (_detection != null)
+            {
+                System.Reflection.MethodInfo exitMethod = typeof(MonsterDetection).GetMethod("OnTriggerExit", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                if (exitMethod != null) exitMethod.Invoke(_detection, new object[] { other });
             }
         }
     }
