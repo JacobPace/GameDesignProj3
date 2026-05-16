@@ -12288,6 +12288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[[ Journal ]] (1)'
       objectReference: {fileID: 0}
+    - target: {fileID: 2106700167148892900, guid: 9b020ad5c18bdb54f83981402c0ad170, type: 3}
+      propertyPath: 'menus.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1152266341}
     - target: {fileID: 5067248195306761632, guid: 9b020ad5c18bdb54f83981402c0ad170, type: 3}
       propertyPath: m_IsActive
       value: 0
