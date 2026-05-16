@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class Flashlight : MonoBehaviour
 {
+    private Animator FlashlightAnim;
+
     [Header("Settings")]
     public float maxPowerTime = 60f;
     public float currentPower;
@@ -59,6 +61,8 @@ public class Flashlight : MonoBehaviour
 
     void Start()
     {
+        FlashlightAnim = GetComponent<Animator>();
+
         currentPower = maxPowerTime;
 
         lightSource.color = fullPowerColor;
@@ -86,6 +90,7 @@ public class Flashlight : MonoBehaviour
 
             // Gradual dimming
             float normalizedPower = currentPower / maxPowerTime;
+            FlashlightAnim.SetFloat("BatteryPercentage", normalizedPower);
 
             // Exponential dimming for more natural battery feel
             float intensityMultiplier = Mathf.Pow(normalizedPower, 1.5f);
@@ -115,9 +120,12 @@ public class Flashlight : MonoBehaviour
 
             if (flashlightTriggerCollider != null)
                 flashlightTriggerCollider.enabled = isOn;
+
+            FlashlightAnim.SetTrigger("NewBattery");
         }
 
         SoundFXManager.instance.PlaySoundFXClip(flashClick, transform, 1f);
+        
     }
 
     IEnumerator FlickerRoutine()
