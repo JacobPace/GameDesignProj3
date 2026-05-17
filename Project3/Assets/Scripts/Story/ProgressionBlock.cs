@@ -9,7 +9,7 @@ public class ProgressionBlock : MonoBehaviour
     [SerializeField]
     private string customPopupMessage = "";
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (((1 << collision.gameObject.layer) & targetLayer) != 0)
         {

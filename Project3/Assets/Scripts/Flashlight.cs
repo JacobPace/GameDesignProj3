@@ -205,11 +205,13 @@ public class Flashlight : MonoBehaviour
             flashlightTriggerCollider.enabled = false;
 
         Debug.Log("Flashlight is dead! Use a 'Battery' to recharge.");
+        if (StoryManager.Instance != null)
+            StoryManager.Instance.ShowPopup($"Flashlight is dead! Use a 'R' to recharge it with a new battery!", 10f);
     }
 
     public void Recharge()
     {
-        if (currentPower < maxPowerTime)
+        if (currentPower < 10)
         {
             if (Player.Instance.inventory.TryUseItem("Battery"))
             {
@@ -234,11 +236,15 @@ public class Flashlight : MonoBehaviour
             else
             {
                 Debug.Log("No batteries in inventory");
+                if (StoryManager.Instance != null)
+                    StoryManager.Instance.ShowPopup("Oh no, I'm out of batteries, maybe those toolboxes have some?", 5f);
             }
         }
         else
         {
             Debug.Log("Flashlight battery is full");
+            if (StoryManager.Instance != null)
+                StoryManager.Instance.ShowPopup("The battery is still good, no need to swap it out yet.");
         }
     }
 }

@@ -165,6 +165,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8778389}
   - component: {fileID: 8778390}
+  - component: {fileID: 8778391}
+  - component: {fileID: 8778392}
   m_Layer: 0
   m_Name: CameraCheck
   m_TagString: Untagged
@@ -208,6 +210,45 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9784817, y: 2.9344015, z: 0.8584786}
   m_Center: {x: 0.020043075, y: 0.164181, z: 0.0707607}
+--- !u!114 &8778391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07933155f8a069c49aad9809f195902d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProgressionBlock
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  customPopupMessage: I wonder what that camera is doing here?
+--- !u!136 &8778392
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778388}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.98859465
+  m_Height: 5.7260375
+  m_Direction: 1
+  m_Center: {x: -0.090836406, y: -0.26362205, z: -0.39775813}
 --- !u!1001 &32229245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -984,6 +1025,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 143776023}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &154979316
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154979318}
+  - component: {fileID: 154979317}
+  m_Layer: 0
+  m_Name: 0983c29e-5bd3-44d3-97df-c078b8a229f2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &154979317
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154979316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &154979318
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154979316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &157654192
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,8 +3542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4b675c2b76ada4284ffc1ad4f58203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StoryManager
-  popupPanel: {fileID: 1227255639}
-  popupText: {fileID: 0}
+  popupText: {fileID: 1300856352}
   popupDuration: 3
   cameraCheck: {fileID: 8778388}
   tapeChecks:
@@ -5312,6 +5397,7 @@ RectTransform:
   - {fileID: 1227255642}
   - {fileID: 1826465545}
   - {fileID: 1705585696}
+  - {fileID: 1300856354}
   m_Father: {fileID: 686360893}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7793,6 +7879,7 @@ GameObject:
   - component: {fileID: 1180977085}
   - component: {fileID: 1180977087}
   - component: {fileID: 1180977086}
+  - component: {fileID: 1180977088}
   m_Layer: 0
   m_Name: TapeCheck3F4
   m_TagString: Untagged
@@ -7852,6 +7939,29 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   customPopupMessage: I wonder if there are any more tapes lying around.
+--- !u!136 &1180977088
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180977084}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.0465431
+  m_Height: 6.0930862
+  m_Direction: 1
+  m_Center: {x: 0.08140564, y: 1.5329747, z: -1.5558167}
 --- !u!1 &1181257707
 GameObject:
   m_ObjectHideFlags: 0
@@ -9400,6 +9510,143 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6323843147225704578, guid: fd2633f42e8bbcf449385559a2688dbd, type: 3}
   m_PrefabInstance: {fileID: 1298380399}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1300856351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300856354}
+  - component: {fileID: 1300856353}
+  - component: {fileID: 1300856352}
+  m_Layer: 5
+  m_Name: PopupPrompt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1300856352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300856351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Popup Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1300856353
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300856351}
+  m_CullTransparentMesh: 1
+--- !u!224 &1300856354
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300856351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 721322462}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -351}
+  m_SizeDelta: {x: 1500, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1307486573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12681,6 +12928,7 @@ GameObject:
   - component: {fileID: 1593355680}
   - component: {fileID: 1593355682}
   - component: {fileID: 1593355681}
+  - component: {fileID: 1593355683}
   m_Layer: 0
   m_Name: TapeCheck1F2
   m_TagString: Untagged
@@ -12740,6 +12988,29 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   customPopupMessage: I wonder if there are any more tapes lying around.
+--- !u!136 &1593355683
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593355679}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.090744
+  m_Height: 4.8584595
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.27348137, z: 0.590744}
 --- !u!1 &1614397007
 GameObject:
   m_ObjectHideFlags: 0
@@ -13929,9 +14200,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2407953234883311882, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1786519319}
-    - targetCorrespondingSourceObject: {fileID: 4253012990419024489, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2040659397}
   m_SourcePrefab: {fileID: 100100000, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
 --- !u!1 &1662760753 stripped
 GameObject:
@@ -14351,6 +14619,7 @@ GameObject:
   - component: {fileID: 1688308849}
   - component: {fileID: 1688308851}
   - component: {fileID: 1688308850}
+  - component: {fileID: 1688308852}
   m_Layer: 0
   m_Name: TapeCheck2F3
   m_TagString: Untagged
@@ -14410,6 +14679,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.4492636, y: 4.444062, z: 1.3110428}
   m_Center: {x: 1.2063074, y: 0.63042355, z: 0.8426962}
+--- !u!136 &1688308852
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688308848}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.7572415
+  m_Height: 6.6610866
+  m_Direction: 2
+  m_Center: {x: 1.1896944, y: 0.17793179, z: -0.16839886}
 --- !u!1001 &1688822906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14728,6 +15020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f57105930cbf6428f40fc36c4f4f8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PopupManager
+  popups:
+  - 
 --- !u!4 &1737120307
 Transform:
   m_ObjectHideFlags: 0
@@ -14878,6 +15172,7 @@ GameObject:
   - component: {fileID: 1768619222}
   - component: {fileID: 1768619224}
   - component: {fileID: 1768619223}
+  - component: {fileID: 1768619225}
   m_Layer: 0
   m_Name: TapeCheck0F1
   m_TagString: Untagged
@@ -14937,6 +15232,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9911432, y: 3.052316, z: 1}
   m_Center: {x: 0.12747717, y: 0.8369502, z: 0}
+--- !u!136 &1768619225
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768619221}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.1179199
+  m_Height: 4.9138007
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.6477339, z: -0.6179199}
 --- !u!1001 &1776857751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17067,7 +17385,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6189126643631408483, guid: ba7c0bdeae54b8d4786b2f07eedab951, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -18587,38 +18906,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5589807692052878117, guid: 124d16cc3a314ab46a21f2727b8ff4fe, type: 3}
   m_PrefabInstance: {fileID: 2023802365}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2040659392 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4253012990419024489, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
-  m_PrefabInstance: {fileID: 1662760752}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &2040659397
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040659392}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &2054623228
 GameObject:
   m_ObjectHideFlags: 0
@@ -20766,3 +21053,4 @@ SceneRoots:
   - {fileID: 350775288}
   - {fileID: 510456296}
   - {fileID: 1737120307}
+  - {fileID: 154979318}
