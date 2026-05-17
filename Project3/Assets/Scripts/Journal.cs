@@ -22,22 +22,24 @@ public class Journal : MonoBehaviour
 
     public void PauseGame()
     {
+        Player.Instance.DisablePauseInput();
+        Player.Instance._playerInput.SwitchCurrentActionMap("UI");
         Player.Instance.anim.SetTrigger("ToggleMenu");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         UpdateInventoryUI();
-        Player.Instance._playerInput.SwitchCurrentActionMap("UI");
         Invoke(nameof(ShowMenu), 2f);
     }
 
     public void ResumeGame()
     {
-        Time.timeScale = 1f;
+        Player.Instance.DisablePauseInput();
+        Player.Instance.anim.SetTrigger("ToggleMenu");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Player.Instance._playerInput.SwitchCurrentActionMap("Player");
-        Player.Instance.anim.SetTrigger("ToggleMenu");
         menus[0].SetActive(false);
+        Time.timeScale = 1f;
     }
 
     public void UpdateInventoryUI()

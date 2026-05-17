@@ -56,8 +56,10 @@ public class Player : MonoBehaviour
     public StarterAssetsInputs _input;
     public FirstPersonController _controller;
 
-    // Private Fields
+    [HideInInspector]
     private readonly Collider[] _lightResults = new Collider[10];
+    public InputAction playerPauseAction;
+    public InputAction uiPauseAction;
 
     private void Awake()
     {
@@ -67,6 +69,8 @@ public class Player : MonoBehaviour
         _input = GetComponent<StarterAssetsInputs>();
         _controller = GetComponent<FirstPersonController>();
         anim = GetComponent<Animator>();
+        playerPauseAction = _playerInput.actions.FindAction($"Player/Pause");
+        uiPauseAction = _playerInput.actions.FindAction($"UI/Pause");
     }
     
     void Start()
@@ -115,25 +119,28 @@ public class Player : MonoBehaviour
                 if (stamina < maxStamina)
                     stamina += staminaRegen * Time.deltaTime;
             }
-
-            if (_playerInput.actions["Flashlight"].triggered)
-                Flashlight.Instance.ToggleFlashlight();
-            if (_playerInput.actions["Recharge"].triggered)
-                Flashlight.Instance.Recharge();
-            
-
-            stamina = Mathf.Clamp(stamina, 0, maxStamina);
+            if (_playerInput.actions["Flashlight"].triggered) Flashlight.Instance.ToggleFlashlight();
+            if (_playerInput.actions["Recharge"].triggered) Flashlight.Instance.Recharge();
+            if (_playerInput.actions["Pause"].triggered) Journal.Instance.PauseGame();
+            if (_playerInput.actions["DevCheats"].triggered) TeleportToExit();
         }
-        if (drainRate == 0) drainRate = SetDrainRate();
+        //if (_playerInput.currentActionMap.name == "UI")
+            //if (_playerInput.actions["Pause"].triggered) Journal.Instance.ResumeGame();
+
+        // Misc updates
         UpdateSanity();
-
-        // Pausing
-        if (_playerInput.actions["Pause"].triggered) Journal.Instance.PauseGame();
-
         UpdatePlayerUI();
-
-        if (_playerInput.actions["DevCheats"].triggered) TeleportToExit();
-
+        stamina = Mathf.Clamp(stamina, 0, maxStamina);
+    }
+    public void DisablePauseInput()
+    {
+        playerPauseAction?.Disable();
+        uiPauseAction?.Disable();
+    }
+    public void EnablePauseInput()
+    {
+        playerPauseAction?.Enable();
+        uiPauseAction?.Enable();
     }
 
     private void UpdatePlayerUI()
@@ -158,6 +165,7 @@ public class Player : MonoBehaviour
     }
     public void UpdateSanity()
     {
+        if (drainRate == 0) drainRate = SetDrainRate();
         if (_lightOverlapCount > 0)
             sanity += 2.0f * drainRate * Time.deltaTime;
         else
