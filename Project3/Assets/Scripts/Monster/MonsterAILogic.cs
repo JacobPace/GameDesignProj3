@@ -51,6 +51,8 @@ public class MonsterAILogic : MonoBehaviour
     private float _vanishTimer = 0f;
     private float _telemetryLogTimer = 0f;
 
+    public static MonsterAILogic Instance { get; private set; }
+
     private void Awake()
     {
         if (transform.parent != null)
@@ -72,6 +74,8 @@ public class MonsterAILogic : MonoBehaviour
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
         rb.useGravity = false;
+
+        if (Instance == null) Instance = this;
     }
 
     private void Start()

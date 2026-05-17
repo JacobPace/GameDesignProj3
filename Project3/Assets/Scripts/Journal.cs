@@ -23,6 +23,8 @@ public class Journal : MonoBehaviour
     public void PauseGame()
     {
         Player.Instance.DisablePauseInput();
+        if (PopupManager.Instance != null)
+            PopupManager.Instance.Pause();
         Player.Instance._playerInput.SwitchCurrentActionMap("UI");
         Player.Instance.anim.SetTrigger("ToggleMenu");
         Cursor.lockState = CursorLockMode.None;
@@ -40,6 +42,8 @@ public class Journal : MonoBehaviour
         Player.Instance._playerInput.SwitchCurrentActionMap("Player");
         menus[0].SetActive(false);
         Time.timeScale = 1f;
+        if (PopupManager.Instance != null)
+            PopupManager.Instance.Resume();
     }
 
     public void UpdateInventoryUI()

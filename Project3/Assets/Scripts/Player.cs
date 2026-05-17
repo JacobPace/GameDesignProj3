@@ -193,7 +193,10 @@ public class Player : MonoBehaviour
     public void GameOver(bool wonGame)
     {
         // logic for animations
-
+        if (MonsterAILogic.Instance != null)
+            MonsterAILogic.Instance.ShutdownAIModule();
+        if (PopupManager.Instance != null)
+            PopupManager.Instance.Pause();
         if (ScoreManager.Instance == null)
         {
             ScoreManager sceneManager = FindFirstObjectByType<ScoreManager>();
