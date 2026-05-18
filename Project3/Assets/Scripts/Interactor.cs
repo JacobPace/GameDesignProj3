@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public interface IInteractable { public string InteractionPrompt { get; } public void Interact(); }
 
 public class Interactor : MonoBehaviour

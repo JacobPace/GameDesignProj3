@@ -4,6 +4,8 @@ using UnityEngine;
 public class StationManager : MonoBehaviour, IInteractable
 {
     [SerializeField] private string promptText = "Press 'E' to Interact";
+    [SerializeField] private AudioClip useStation;
+    [SerializeField] private AudioClip hollowThud;
     public string InteractionPrompt => promptText;
 
     [System.Serializable]
@@ -24,6 +26,7 @@ public class StationManager : MonoBehaviour, IInteractable
     {
         if (_hasBeenUsed)
         {
+            SoundFXManager.instance.PlaySoundFXClip(hollowThud, transform, 1f);
             Debug.Log("Station is empty!");
             return;
         }
@@ -37,6 +40,8 @@ public class StationManager : MonoBehaviour, IInteractable
 
         Debug.Log($"Station gave {finalAmount} items on {diff}");
         // Logic to change model or color can be done here
+
+        SoundFXManager.instance.PlaySoundFXClip(useStation, transform, 1f);
     }
 
     private int CalculateRandomLoot()
