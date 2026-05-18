@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
+using UnityEngine.Video;
 using static StationManager;
 
 [RequireComponent(typeof(PlayerInput))]
@@ -43,6 +44,8 @@ public class Player : MonoBehaviour
     public Slider sanitySlider;
     public Animator anim;
     public GameObject VideoMenu;
+    public GameObject VideoPlayer;
+    public VideoClip[] videoList = new VideoClip[5];
 
     [Header("Dev Cheats")]
     public GameObject devCheat;
@@ -190,6 +193,42 @@ public class Player : MonoBehaviour
         };
     }
 
+    public void VideoSequence()
+    {
+        _controller.enabled = false;
+        _input.enabled = false;
+        anim.SetTrigger("ToggleVideo");
+
+        // Get video
+        int videoCount = inventory.TotalTapesCollected();
+        VideoPlayer.GetComponent<VideoPlayer>().clip = videoList[videoCount - 1];
+
+        // Delay Pause by 2f
+        PopupManager.Instance.Pause();
+        Invoke(nameof(StartVideo), 2f);
+    }
+
+    public void StartVideo()
+    {
+        // Activate UI
+        Time.timeScale = 0f;
+        VideoMenu.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void EndVideo()
+    {
+        VideoMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        _controller.enabled = true;
+        _input.enabled = true;
+        anim.SetTrigger("ToggleVideo");
+        Time.timeScale = 1f;
+        PopupManager.Instance.StartPlaying();
+    }
+
     public void GameOver(bool wonGame)
     {
         // logic for animations
@@ -252,14 +291,7 @@ public class Inventory
             _uniqueTapes.Add(tapeID);
             Debug.Log($"Inventory: Unique tape added: {tapeID}");
 
-            Player.Instance.anim.SetTrigger("ToggleVideo");
-            // Delay Pause by 2f
-            // Activate UI
-            // Find the number of tapes currently in possesion
-            // Call video from list to play on UI
-            // Once video is over (Probably a next button) close the menu
-            // Play the animation to put video camera down
-            // Resume game
+            Player.Instance.VideoSequence();
         }
     }
 
