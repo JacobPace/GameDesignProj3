@@ -3,9 +3,6 @@ using System.Collections;
 
 public class PopupManager : MonoBehaviour
 {
-    [Header("Layer Settings")]
-    [SerializeField] private LayerMask targetLayer;
-
     [Header("Popup Messages")]
     public string[] customPopupMessages;
     private int prev = -1;
