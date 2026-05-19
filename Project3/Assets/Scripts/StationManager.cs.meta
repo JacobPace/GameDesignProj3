@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: 186fd7b8f9b3c0f478fea0dd96829a85
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - useStation: {fileID: 8300000, guid: c533654f73f39d24daacb49375ac559c, type: 3}
+  - hollowThud: {fileID: 8300000, guid: 8958bb62c93f908468568a10edc427e8, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
