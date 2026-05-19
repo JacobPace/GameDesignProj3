@@ -17968,6 +17968,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundMixerManager
   audioMixer: {fileID: 24100000, guid: b77a52dcb7bcd1846911dfebd4b48f6a, type: 2}
+  masterSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
+  musicSlider: {fileID: 0}
   masterVolume: 1
   soundFXVolume: 1
   musicVolume: 1
@@ -26397,9 +26400,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5242107653240477476, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1791114878}
-    - targetCorrespondingSourceObject: {fileID: 5242107653240477476, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1791114879}
     - targetCorrespondingSourceObject: {fileID: 9182424111802802731, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1252213033}
@@ -28638,18 +28638,6 @@ MonoBehaviour:
   audioSource: {fileID: 1366784634}
   sfxGroup: {fileID: 9148279758044735532, guid: b77a52dcb7bcd1846911dfebd4b48f6a, type: 2}
   baseStepInterval: 0.6
---- !u!114 &1791114879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1501888102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8dade635fc350c4faddff9578191db9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimationPauseToggle
 --- !u!1001 &1792355675
 PrefabInstance:
   m_ObjectHideFlags: 0
