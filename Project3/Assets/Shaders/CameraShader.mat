@@ -26,9 +26,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _Darkness: 0
-    - _GrainStrength: 0.01
+    - _GrainStrength: 0.001
     - _JitterStrength: 0.0005
-    - _NoiseStrength: 0.0025
+    - _NoiseStrength: 0.0005
     - _ScanlineStrength: 0.025
     - _VignetteStrength: 1
     m_Colors: []
