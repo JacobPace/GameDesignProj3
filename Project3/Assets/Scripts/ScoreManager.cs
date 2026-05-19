@@ -57,13 +57,13 @@ public class ScoreManager : MonoBehaviour
             };
         }
         // time bonus -> max bonus is from completion within 20 mins
-        //return (int)(collectibleBonus * diffMult);
-        return 67_420;
+        return (int)(collectibleBonus * diffMult);
+        //return 67_420;
     }
 
     public void SubmitScore()
     {
-        if (string.IsNullOrWhiteSpace(playerNameInput.text) || score == 0)
+        if (string.IsNullOrWhiteSpace(playerNameInput.text))
         {
             ShowInputError("Please enter a valid name!");
         }

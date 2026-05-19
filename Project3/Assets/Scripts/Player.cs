@@ -125,7 +125,7 @@ public class Player : MonoBehaviour
             if (_playerInput.actions["Flashlight"].triggered) Flashlight.Instance.ToggleFlashlight();
             if (_playerInput.actions["Recharge"].triggered) Flashlight.Instance.Recharge();
             if (_playerInput.actions["Pause"].triggered) Journal.Instance.PauseGame();
-            if (_playerInput.actions["DevCheats"].triggered) TeleportToExit();
+            //if (_playerInput.actions["DevCheats"].triggered) TeleportToExit();
         }
         //if (_playerInput.currentActionMap.name == "UI")
             //if (_playerInput.actions["Pause"].triggered) Journal.Instance.ResumeGame();
