@@ -1695,6 +1695,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &157283173 stripped
 GameObject:
@@ -2694,6 +2695,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 246251861}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &249276911
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 249276913}
+  - component: {fileID: 249276912}
+  m_Layer: 0
+  m_Name: e4461422-0dc3-4d2a-b798-9f468912ee07
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &249276912
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249276911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &249276913
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249276911}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &250365156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2855,6 +2901,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &260221507
 PrefabInstance:
@@ -4205,6 +4252,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &375731603
 PrefabInstance:
@@ -4623,6 +4671,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409501310}
   m_CullTransparentMesh: 1
+--- !u!1 &411872995
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411872997}
+  - component: {fileID: 411872996}
+  m_Layer: 0
+  m_Name: ab58f3d2-4d3a-4ac4-a02e-89ffb7088c46
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &411872996
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411872995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &411872997
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411872995}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &422451200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8990,6 +9083,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &717962906
 PrefabInstance:
@@ -9446,6 +9540,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &744429558
 GameObject:
@@ -10358,6 +10453,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &830236972
 GameObject:
@@ -11223,6 +11319,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &894947152 stripped
 GameObject:
@@ -11889,6 +11986,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &927013987
 PrefabInstance:
@@ -11981,6 +12079,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &939645680
 PrefabInstance:
@@ -12288,6 +12387,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &971852995 stripped
 GameObject:
@@ -12311,6 +12411,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &982112201 stripped
 GameObject:
@@ -12334,6 +12435,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &982189710 stripped
 GameObject:
@@ -12581,6 +12683,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &999345502
 PrefabInstance:
@@ -12664,6 +12767,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1000938520
 PrefabInstance:
@@ -13622,6 +13726,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1050836941
 PrefabInstance:
@@ -14041,6 +14146,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1075905202
 PrefabInstance:
@@ -14380,6 +14486,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1086647865 stripped
 GameObject:
@@ -14688,6 +14795,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1103228709
 PrefabInstance:
@@ -14771,6 +14879,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1114019029
 PrefabInstance:
@@ -14949,6 +15058,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1127806969 stripped
 GameObject:
@@ -15502,6 +15612,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1154511344 stripped
 GameObject:
@@ -15535,6 +15646,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1157038849 stripped
 GameObject:
@@ -15717,6 +15829,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1178350883
 PrefabInstance:
@@ -18297,6 +18410,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1308991245
 PrefabInstance:
@@ -18380,6 +18494,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1313535835
 GameObject:
@@ -18444,6 +18559,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1318065781
 GameObject:
@@ -18597,6 +18713,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1329550238
 PrefabInstance:
@@ -18982,6 +19099,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1348763508
 PrefabInstance:
@@ -19297,6 +19415,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1358053238 stripped
 GameObject:
@@ -19320,6 +19439,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1362082729 stripped
 GameObject:
@@ -19846,6 +19966,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1373981566 stripped
 GameObject:
@@ -19874,6 +19995,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1385535651
 PrefabInstance:
@@ -20244,6 +20366,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1412283887
 PrefabInstance:
@@ -20624,6 +20747,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1439420062 stripped
 GameObject:
@@ -20746,6 +20870,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1459320574
 PrefabInstance:
@@ -22389,6 +22514,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1511187495 stripped
 GameObject:
@@ -22492,6 +22618,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 5
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 1
 --- !u!1001 &1516737520
 PrefabInstance:
@@ -23332,6 +23459,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1551383506
 PrefabInstance:
@@ -23614,6 +23742,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1560142499 stripped
 GameObject:
@@ -23637,6 +23766,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1566033071 stripped
 GameObject:
@@ -23665,6 +23795,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1567607458 stripped
 GameObject:
@@ -23708,6 +23839,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1574034125
 GameObject:
@@ -24015,6 +24147,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1583876909 stripped
 GameObject:
@@ -24527,6 +24660,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1613984011
 PrefabInstance:
@@ -24622,6 +24756,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1614397007
 GameObject:
@@ -24807,6 +24942,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1626676867
 PrefabInstance:
@@ -25090,6 +25226,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1634726818
 PrefabInstance:
@@ -25177,6 +25314,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1638335894
 PrefabInstance:
@@ -25338,6 +25476,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1647306453
 GameObject:
@@ -26619,6 +26758,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1677072258
 GameObject:
@@ -26888,6 +27028,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1688308848
 GameObject:
@@ -27313,6 +27454,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1716757586
 PrefabInstance:
@@ -27666,6 +27808,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1749350507
 PrefabInstance:
@@ -27757,6 +27900,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1755976328
 PrefabInstance:
@@ -27990,6 +28134,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1768619221
 GameObject:
@@ -28107,6 +28252,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1775747928 stripped
 GameObject:
@@ -29098,6 +29244,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1820588461
 PrefabInstance:
@@ -29181,6 +29328,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1825873448
 PrefabInstance:
@@ -29272,6 +29420,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1826465544
 GameObject:
@@ -29375,10 +29524,6 @@ PrefabInstance:
     - target: {fileID: 1785243225640268521, guid: 24dceb8b779661947b30228a33def071, type: 3}
       propertyPath: m_Name
       value: FinalStaircase
-      objectReference: {fileID: 0}
-    - target: {fileID: 3145202092068284693, guid: 24dceb8b779661947b30228a33def071, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6733893308308077912, guid: 24dceb8b779661947b30228a33def071, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29521,6 +29666,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1837668905
 PrefabInstance:
@@ -29608,6 +29754,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1839248850
 PrefabInstance:
@@ -29988,6 +30135,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1855064552 stripped
 GameObject:
@@ -30011,6 +30159,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1856977998
 PrefabInstance:
@@ -30094,6 +30243,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1860755354
 PrefabInstance:
@@ -30197,6 +30347,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1869263269
 PrefabInstance:
@@ -30530,6 +30681,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1896714706
 GameObject:
@@ -30970,6 +31122,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1924486695 stripped
 GameObject:
@@ -31283,6 +31436,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1944910393
 PrefabInstance:
@@ -31370,6 +31524,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1950547384
 PrefabInstance:
@@ -31453,6 +31608,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &1950906997 stripped
 GameObject:
@@ -31625,6 +31781,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1962456487
 PrefabInstance:
@@ -33498,6 +33655,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &1997989214
 PrefabInstance:
@@ -33659,6 +33817,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &2000387144
 GameObject:
@@ -33956,6 +34115,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &2005978157
 PrefabInstance:
@@ -34067,6 +34227,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &2014912847
 PrefabInstance:
@@ -34170,6 +34331,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &2015672802
 GameObject:
@@ -34480,6 +34642,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &2040319205
 PrefabInstance:
@@ -34583,6 +34746,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &2054623228
 GameObject:
@@ -34805,6 +34969,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &2081771119
 PrefabInstance:
@@ -35136,6 +35301,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &2096907222
 PrefabInstance:
@@ -35227,6 +35393,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 20
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &2101258669 stripped
 GameObject:
@@ -35250,6 +35417,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &2101465131
 PrefabInstance:
@@ -35333,6 +35501,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &2102335846
 PrefabInstance:
@@ -35420,6 +35589,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &2106521911 stripped
 GameObject:
@@ -35443,6 +35613,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &2107090957
 GameObject:
@@ -35822,6 +35993,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1001 &2126583478
 PrefabInstance:
@@ -35905,6 +36077,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &2128927756 stripped
 GameObject:
@@ -35928,6 +36101,7 @@ MonoBehaviour:
   player: {fileID: 1662760769}
   maxDistance: 1
   checkInterval: 0.25
+  useRendererBounds: 1
   invert: 0
 --- !u!1 &2134388631
 GameObject:
@@ -36995,3 +37169,5 @@ SceneRoots:
   - {fileID: 223650229}
   - {fileID: 439031469}
   - {fileID: 674730771}
+  - {fileID: 249276913}
+  - {fileID: 411872997}

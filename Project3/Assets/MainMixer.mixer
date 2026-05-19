@@ -53,26 +53,6 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
---- !u!244 &-804846171265986813
-AudioMixerEffectController:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_EffectID: 4fa34308ced5f004786d93148b8ee589
-  m_EffectName: Normalize
-  m_MixLevel: 556b634da34978d449d43fc8ca384360
-  m_Parameters:
-  - m_ParameterName: Fade in time
-    m_GUID: 2844f1a5200e8034d8f8aa6872fccb3f
-  - m_ParameterName: Lowest volume
-    m_GUID: 8715711dce910244791744e633b8dbcf
-  - m_ParameterName: Maximum amp
-    m_GUID: e2d77c0cf488afc478f17c8512be4d39
-  m_SendTarget: {fileID: 0}
-  m_EnableWetMix: 0
-  m_Bypass: 0
 --- !u!244 &-138993673115769346
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -172,7 +152,30 @@ AudioMixerSnapshotController:
     7a42a28ae350d0b479c1566a8cfc41ad: 400
     00f7641dd04acfe4f8b0de403138ae8e: 400
     92bbe22e17742684dbff744941593658: 85
+    70a9d4ee36e6a4f47baffae2b5d2ce41: -50
   m_TransitionOverrides: {}
+--- !u!244 &4860804936162223625
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: edb754e32ec600342aa603dfb3a917c8
+  m_EffectName: Compressor
+  m_MixLevel: 97f7d0b7386d7264d9ec5e271a57ae04
+  m_Parameters:
+  - m_ParameterName: Threshold
+    m_GUID: 70a9d4ee36e6a4f47baffae2b5d2ce41
+  - m_ParameterName: Attack
+    m_GUID: 6ab6ad25a5271774d929b983d60c151a
+  - m_ParameterName: Release
+    m_GUID: 38f3f8c696ddde9469668c795af1a03c
+  - m_ParameterName: Make up gain
+    m_GUID: 02be0762ff2a53a4fae46595bdffbdd2
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &5988837575530135198
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -250,8 +253,8 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: -6438603823581551790}
-  - {fileID: -804846171265986813}
   - {fileID: 5988837575530135198}
+  - {fileID: 4860804936162223625}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
