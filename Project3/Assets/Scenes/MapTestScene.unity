@@ -207,13 +207,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1358053239}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &6276824 stripped
 Transform:
@@ -460,13 +461,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1550830847}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &41164762 stripped
 Transform:
@@ -484,6 +486,10 @@ PrefabInstance:
     - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_Name
       value: Crate (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -532,10 +538,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2015451002}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &44854181 stripped
 Transform:
@@ -1196,13 +1199,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1644663051}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &100324258 stripped
 Transform:
@@ -1261,13 +1265,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 253371863}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &108565911 stripped
 Transform:
@@ -1350,6 +1355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile7 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -47.84173
@@ -1393,10 +1402,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1674470263}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &125544449 stripped
 Transform:
@@ -1625,6 +1631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -94.2601
@@ -1668,35 +1678,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 156520334}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &156520333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 156520332}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &156520334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30699473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 30699473}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &157283173 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8372266205697642251, guid: 68fb6c3f2e635754fabf54ccfb18f787, type: 3}
@@ -1984,6 +1972,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7808813284474065770, guid: 04bcb02c16e112f4896ae5ea2a409762, type: 3}
   m_PrefabInstance: {fileID: 179918206}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &180441920
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 180441922}
+  - component: {fileID: 180441921}
+  m_Layer: 0
+  m_Name: eefa47d4-47b1-4e83-ae7b-4d5414df7506
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &180441921
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180441920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &180441922
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180441920}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &182490247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4797605915099177223, guid: 3022d58e2e97b2b4b8b4afdc518597f1, type: 3}
@@ -2497,56 +2530,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2863964955194345675, guid: fc9cd11ecce17ae4b81423d4b363c5d5, type: 3}
   m_PrefabInstance: {fileID: 218217055}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &220987841 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-  m_PrefabInstance: {fileID: 2096907222}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &223650227
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 223650229}
-  - component: {fileID: 223650228}
-  m_Layer: 0
-  m_Name: 5a35efda-df8b-4470-9017-cd903bf08a03
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &223650228
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223650227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &223650229
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223650227}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &225941351 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
@@ -2682,64 +2665,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1101964914}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &246251862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 246251861}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &249276911
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 249276913}
-  - component: {fileID: 249276912}
-  m_Layer: 0
-  m_Name: e4461422-0dc3-4d2a-b798-9f468912ee07
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &249276912
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249276911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &249276913
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249276911}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &250365156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2884,25 +2823,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 108565910}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &253371863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253371862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 253371862}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &260221507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2955,13 +2875,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile6 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1165271987}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
 --- !u!4 &260221508 stripped
 Transform:
@@ -3173,13 +3094,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8939898359094899223, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8939898359094899223, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2128927757}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
 --- !u!4 &276489277 stripped
 Transform:
@@ -3238,13 +3160,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile5
       objectReference: {fileID: 0}
+    - target: {fileID: 8939898359094899223, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8939898359094899223, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1325394269}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
 --- !u!4 &288125650 stripped
 Transform:
@@ -3333,6 +3256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile7 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.846001
@@ -3376,10 +3303,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2045382321}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &308378488 stripped
 Transform:
@@ -3438,13 +3362,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1573489180}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &311049013 stripped
 Transform:
@@ -3462,6 +3387,10 @@ PrefabInstance:
     - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_Name
       value: BonePile7 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3506,10 +3435,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 741674901}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &326336644 stripped
 Transform:
@@ -3585,6 +3511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.800003
@@ -3628,10 +3558,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1741844000}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &334261152 stripped
 Transform:
@@ -3702,13 +3629,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1854825391}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &334806488 stripped
 Transform:
@@ -3953,7 +3881,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 901470989}
     m_Modifications:
     - target: {fileID: 1342620117562210395, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
       propertyPath: m_Name
@@ -3965,15 +3893,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.0567088
+      value: 8.989729
       objectReference: {fileID: 0}
     - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.091
+      value: -8.820761
       objectReference: {fileID: 0}
     - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.008068
+      value: 9.008068
       objectReference: {fileID: 0}
     - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3981,15 +3909,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4222,38 +4150,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 370006603}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &370006598 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 370006597}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &370006603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215390527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 215390527}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &375731603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4331,6 +4241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -106.049995
@@ -4374,10 +4288,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1314625577}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &377203523 stripped
 Transform:
@@ -4671,51 +4582,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409501310}
   m_CullTransparentMesh: 1
---- !u!1 &411872995
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 411872997}
-  - component: {fileID: 411872996}
-  m_Layer: 0
-  m_Name: ab58f3d2-4d3a-4ac4-a02e-89ffb7088c46
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &411872996
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411872995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &411872997
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411872995}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &422451200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5079,51 +4945,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 433733380}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &439031467
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 439031469}
-  - component: {fileID: 439031468}
-  m_Layer: 0
-  m_Name: 14a0bf68-4988-477b-9779-e4250801270d
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &439031468
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439031467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &439031469
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439031467}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &445364750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5861,11 +5682,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 488706641}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &492597318 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-  m_PrefabInstance: {fileID: 1944910393}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &494104355 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8275610262238567920, guid: 1228915f8d004aa4f8a4765748bccb12, type: 3}
@@ -6102,6 +5918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile7 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -98.253746
@@ -6145,10 +5965,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1154071034}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &517521756 stripped
 Transform:
@@ -6311,6 +6128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1288.7417
@@ -6362,10 +6183,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1307702290}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &527123795 stripped
 Transform:
@@ -6786,6 +6604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1288.7417
@@ -6833,10 +6655,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1855064553}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &545927413 stripped
 Transform:
@@ -7124,13 +6943,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 999135183}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &572438611 stripped
 Transform:
@@ -7153,6 +6973,10 @@ PrefabInstance:
     - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_Name
       value: BonePile7 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7197,10 +7021,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1560142500}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &573951711 stripped
 Transform:
@@ -7502,6 +7323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile7
       objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.280001
@@ -7545,10 +7370,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1073995800}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &585500678 stripped
 Transform:
@@ -8206,6 +8028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1288.7417
@@ -8257,10 +8083,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 892246354}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &669507683 stripped
 Transform:
@@ -8341,51 +8164,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 672547591}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &674730769
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 674730771}
-  - component: {fileID: 674730770}
-  m_Layer: 0
-  m_Name: 119696af-9647-4107-bdf3-62ff1c592d4d
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &674730770
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674730769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &674730771
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674730769}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &679703600 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
@@ -8728,13 +8506,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1566451104}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &696260126 stripped
 Transform:
@@ -8752,6 +8531,10 @@ PrefabInstance:
     - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_Name
       value: BonePile7 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8796,10 +8579,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 971852996}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &696743963 stripped
 Transform:
@@ -9001,6 +8781,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4542345055711962138, guid: 1228915f8d004aa4f8a4765748bccb12, type: 3}
   m_PrefabInstance: {fileID: 701549744}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &706357819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 901470989}
+    m_Modifications:
+    - target: {fileID: 1342620117562210395, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_Name
+      value: VHS tape 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914007874044112637, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: optionalTag
+      value: Tape2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.362347
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.5055094
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 95.060295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+--- !u!4 &706357820 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+  m_PrefabInstance: {fileID: 706357819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &717752339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9053,38 +8899,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile6 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 717752341}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
 --- !u!4 &717752340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3646596221049687004, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
   m_PrefabInstance: {fileID: 717752339}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &717752341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605286583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 605286583}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &717962906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9425,13 +9253,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile6
       objectReference: {fileID: 0}
+    - target: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1885182714}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
 --- !u!4 &732163999 stripped
 Transform:
@@ -9523,25 +9352,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 326336643}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &741674901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741674900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 741674900}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &744429558
 GameObject:
   m_ObjectHideFlags: 0
@@ -10115,10 +9925,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1712451645}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &808069685 stripped
 Transform:
@@ -10423,38 +10230,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 828999713}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &828999708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 828999707}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &828999713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158183334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 158183334}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &830236972
 GameObject:
   m_ObjectHideFlags: 0
@@ -10689,6 +10478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1288.7417
@@ -10736,10 +10529,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2003648786}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &847203379 stripped
 Transform:
@@ -10757,6 +10547,10 @@ PrefabInstance:
     - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_Name
       value: Crate (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -10809,10 +10603,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 982112202}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &847784412 stripped
 Transform:
@@ -11175,6 +10966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1288.7417
@@ -11222,10 +11017,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1952693633}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &883112943 stripped
 Transform:
@@ -11302,25 +11094,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 669507682}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &892246354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 892246353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 892246353}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &894947152 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
@@ -11331,6 +11104,42 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 926306027}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &901470988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 901470989}
+  m_Layer: 0
+  m_Name: Tapes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &901470989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901470988}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.93302, y: 8.91176, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1957117635}
+  - {fileID: 706357820}
+  - {fileID: 2074206812}
+  - {fileID: 1086412784}
+  - {fileID: 1890752237}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &902397603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11487,6 +11296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile7 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -65.255
@@ -11530,10 +11343,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 929764923}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &907526811 stripped
 Transform:
@@ -11956,38 +11766,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 926306029}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &926306028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2325737162170364955, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 926306027}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &926306029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 896980153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 896980153}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &927013987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12044,13 +11836,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1157034429}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &927013988 stripped
 Transform:
@@ -12062,25 +11855,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 907526810}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &929764923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929764922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 929764922}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &939645680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12172,6 +11946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile7
       objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -86.21381
@@ -12215,10 +11993,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1384937245}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &946902351 stripped
 Transform:
@@ -12255,51 +12030,6 @@ MonoBehaviour:
   player: {fileID: 1662760759}
   maxDistance: 50
   checkInterval: 0.5
---- !u!1 &966794394
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 966794396}
-  - component: {fileID: 966794395}
-  m_Layer: 0
-  m_Name: 36114050-8e2a-42fc-a7ad-c69c16cf27f9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &966794395
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966794394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &966794396
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966794394}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &968957181 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8275610262238567920, guid: 1228915f8d004aa4f8a4765748bccb12, type: 3}
@@ -12357,86 +12087,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 971322575}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &971322574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2325737162170364955, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 971322573}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &971322575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947285972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 947285972}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &971852995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 696743962}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &971852996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 971852995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 971852995}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &982112201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 847784411}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &982112202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 982112201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 982112201}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &982189710 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2427360092477345616, guid: 66fea51a9e364f44b9725542c5ca9545, type: 3}
@@ -12518,13 +12192,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2125694334}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &990799724 stripped
 Transform:
@@ -12666,25 +12341,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 572438610}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &999135183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999135182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 999135182}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &999345502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12737,38 +12393,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 999345508}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &999345503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 999345502}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &999345508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275238342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 275238342}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1000938520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12901,13 +12539,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1047390254}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &1002361477 stripped
 Transform:
@@ -13709,25 +13348,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 1002361476}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1047390254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047390249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1047390249}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1050836941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13979,6 +13599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1288.7415
@@ -14034,10 +13658,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1456754033}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1066087031 stripped
 Transform:
@@ -14129,25 +13750,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 585500677}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1073995800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073995799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1073995799}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1075905202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14408,6 +14010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1288.7417
@@ -14459,35 +14065,79 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1085968898}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1085968897 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1085968896}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1085968898
-MonoBehaviour:
+--- !u!1001 &1086412783
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 901470989}
+    m_Modifications:
+    - target: {fileID: 1342620117562210395, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_Name
+      value: VHS tape 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914007874044112637, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: optionalTag
+      value: Tape4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.383915
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.491601
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.940303
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+--- !u!4 &1086412784 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+  m_PrefabInstance: {fileID: 1086412783}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533196701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 533196701}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1086647865 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1888449047877092209, guid: 330121fb0c948334586357c96c1936b4, type: 3}
@@ -14778,25 +14428,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 246251861}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1101964914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1101964909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1101964909}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1103228709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14849,38 +14480,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile6 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1103228711}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
 --- !u!4 &1103228710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3646596221049687004, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
   m_PrefabInstance: {fileID: 1103228709}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1103228711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952880851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 952880851}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1114019029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14892,6 +14505,10 @@ PrefabInstance:
     - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_Name
       value: BonePile7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14936,10 +14553,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1626599909}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &1114019030 stripped
 Transform:
@@ -15028,38 +14642,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile6 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1122333639}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
 --- !u!4 &1122333638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3646596221049687004, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
   m_PrefabInstance: {fileID: 1122333637}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1122333639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365224004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 365224004}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1127806969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
@@ -15595,25 +15191,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 517521755}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1154071034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154071033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1154071033}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1154511344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
@@ -15629,25 +15206,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 927013987}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1157034429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157034424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1157034424}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1157038849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2909928822736665614, guid: aa0a6d972b58c4f4c96a1aaa87fd1365, type: 3}
@@ -15812,25 +15370,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
   m_PrefabInstance: {fileID: 260221507}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1165271987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165271986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1165271986}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1178350883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17537,13 +17076,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile5
       objectReference: {fileID: 0}
+    - target: {fileID: 8939898359094899223, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8939898359094899223, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2105040174}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
 --- !u!4 &1265487954 stripped
 Transform:
@@ -18393,25 +17933,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 527123794}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1307702290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307702289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1307702289}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1308991245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18464,38 +17985,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1308991247}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &1308991246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2325737162170364955, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 1308991245}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1308991247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679703600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 679703600}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1313535835
 GameObject:
   m_ObjectHideFlags: 0
@@ -18542,25 +18045,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 377203522}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1314625577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314625576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1314625576}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1318065781
 GameObject:
   m_ObjectHideFlags: 0
@@ -18696,25 +18180,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8939898359094899223, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
   m_PrefabInstance: {fileID: 288125649}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1325394269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325394268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1325394268}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1329550238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19029,6 +18494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.057646
@@ -19072,35 +18541,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1346265844}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1346265843 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1346265842}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1346265844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127806969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1127806969}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1348763508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19153,13 +18600,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1868328370}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &1348763509 stripped
 Transform:
@@ -19337,6 +18785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1288.7415
@@ -19388,59 +18840,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1357481870}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1357481869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1357481868}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1357481870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135427684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 135427684}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1358053238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 6276823}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1358053239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358053238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1358053238}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1362082729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2427360092477345616, guid: 66fea51a9e364f44b9725542c5ca9545, type: 3}
@@ -19819,6 +19230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1288.7412
@@ -19870,10 +19285,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1434324104}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1371579374 stripped
 Transform:
@@ -19891,6 +19303,10 @@ PrefabInstance:
     - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_Name
       value: Crate (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -19939,35 +19355,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1371847953}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1371847952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1371847951}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1371847953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9729890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 9729890}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1373981566 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1888449047877092209, guid: 330121fb0c948334586357c96c1936b4, type: 3}
@@ -19978,25 +19372,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 946902350}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1384937245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384937244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1384937244}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1385535651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20296,6 +19671,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 51.63836
@@ -20339,35 +19718,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1409454291}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1409454290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1409454289}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1409454291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1251654036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1251654036}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1412283887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20460,6 +19817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1288.7417
@@ -20511,10 +19872,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1770825739}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1414710197 stripped
 Transform:
@@ -20725,30 +20083,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5589807692052878117, guid: 124d16cc3a314ab46a21f2727b8ff4fe, type: 3}
   m_PrefabInstance: {fileID: 1428278522}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1433581936
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1433581938}
+  - component: {fileID: 1433581937}
+  m_Layer: 0
+  m_Name: 7b9a666f-4bc0-45ad-b47b-55c6264ce308
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1433581937
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433581936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
+  items: []
+--- !u!4 &1433581938
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433581936}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1434324103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1371579373}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1434324104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434324103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1434324103}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1439420062 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8040071787372411504, guid: 0b010dcf06211354db53711cdc6e25d5, type: 3}
@@ -20853,25 +20237,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1066087030}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1456754033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456754032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1456754032}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1459320574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22104,13 +21469,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2013309041}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &1484500649 stripped
 Transform:
@@ -22484,38 +21850,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile6 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1509641105}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
 --- !u!4 &1509641104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3646596221049687004, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
   m_PrefabInstance: {fileID: 1509641103}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1509641105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300062583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1300062583}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1511187495 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1674735640016498080, guid: fc9cd11ecce17ae4b81423d4b363c5d5, type: 3}
@@ -22588,38 +21936,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1513725608}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &1513725603 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 1513725602}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1513725608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779022407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 779022407}
-  player: {fileID: 1662760769}
-  maxDistance: 5
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 1
 --- !u!1001 &1516737520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23442,25 +22772,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 41164761}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1550830847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550830846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1550830846}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1551383506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23664,6 +22975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1288.7412
@@ -23715,59 +23030,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1555807457}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1555807456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1555807455}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1555807457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643590542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 643590542}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1560142499 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 573951710}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1560142500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560142499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1560142499}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1566033071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
@@ -23778,25 +23052,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 696260125}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1566451104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566451099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1566451099}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1567607458 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6078232666403030834, guid: 150201cc086fc4840abbbaf6e0512846, type: 3}
@@ -23822,25 +23077,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 311049012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1573489180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573489179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1573489179}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1574034125
 GameObject:
   m_ObjectHideFlags: 0
@@ -24038,13 +23274,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2106521912}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &1578519415 stripped
 Transform:
@@ -24072,6 +23309,10 @@ PrefabInstance:
     - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_Name
       value: Crate (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -24120,35 +23361,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1583280502}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1583280501 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1583280500}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1583280502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154511344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1154511344}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1583876909 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8232205811332381791, guid: 04bcb02c16e112f4896ae5ea2a409762, type: 3}
@@ -24630,38 +23849,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile4
       objectReference: {fileID: 0}
+    - target: {fileID: 8040071787372411504, guid: 0b010dcf06211354db53711cdc6e25d5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8040071787372411504, guid: 0b010dcf06211354db53711cdc6e25d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1605526804}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b010dcf06211354db53711cdc6e25d5, type: 3}
 --- !u!4 &1605526803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7480773026025934605, guid: 0b010dcf06211354db53711cdc6e25d5, type: 3}
   m_PrefabInstance: {fileID: 1605526802}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1605526804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439420062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1439420062}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1613984011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24673,6 +23874,10 @@ PrefabInstance:
     - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_Name
       value: Crate (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -24729,35 +23934,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1613984013}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1613984012 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1613984011}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1613984013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225941351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 225941351}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1614397007
 GameObject:
   m_ObjectHideFlags: 0
@@ -24925,25 +24108,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 1114019029}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1626599909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1626599908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1626599908}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1626676867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25099,51 +24263,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8275610262238567920, guid: 1228915f8d004aa4f8a4765748bccb12, type: 3}
   m_PrefabInstance: {fileID: 1720974859}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1632373677
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1632373679}
-  - component: {fileID: 1632373678}
-  m_Layer: 0
-  m_Name: 7d0b6768-6583-4708-ab30-c290b9bb5666
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1632373678
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632373677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -521311792, guid: 355474d781e5561489e3595e39866770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Tripolygon.UModelerX.Runtime.dll::Tripolygon.UModelerX.Runtime.UModelerXCurveCache
-  items: []
---- !u!4 &1632373679
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632373677}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1634489336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25155,6 +24274,10 @@ PrefabInstance:
     - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_Name
       value: BonePile7 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25199,35 +24322,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1634489338}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &1634489337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 1634489336}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1634489338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823303043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 823303043}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1634726818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25284,38 +24385,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1634726824}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &1634726819 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 1634726818}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1634726824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751701499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 751701499}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1638335894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25459,25 +24542,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 100324257}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1644663051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644663046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1644663046}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1647306453
 GameObject:
   m_ObjectHideFlags: 0
@@ -25739,13 +24803,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2101258670}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &1659922564 stripped
 Transform:
@@ -26741,25 +25806,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 125544448}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1674470263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674470262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1674470262}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1677072258
 GameObject:
   m_ObjectHideFlags: 0
@@ -26998,38 +26044,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1686697399}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &1686697398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2325737162170364955, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 1686697397}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1686697399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508410255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 508410255}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1688308848
 GameObject:
   m_ObjectHideFlags: 0
@@ -27432,30 +26460,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708372149}
   m_CullTransparentMesh: 1
+--- !u!1001 &1710002416
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627852689869086065, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_Name
+      value: Cart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227852404788349810, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227852404788349810, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227852404788349810, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.780193
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227852404788349810, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227852404788349810, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227852404788349810, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227852404788349810, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227852404788349810, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227852404788349810, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227852404788349810, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1f2515e8309dfe3448eafcf4a5160b34, type: 3}
 --- !u!1 &1712451644 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 808069684}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1712451645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712451644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1712451644}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1716757586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27791,25 +26857,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 334261151}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1741844000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741843999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1741843999}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1749350507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27821,6 +26868,10 @@ PrefabInstance:
     - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_Name
       value: Crate (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -27873,35 +26924,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1749350509}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1749350508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1749350507}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1749350509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 602588541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 602588541}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1755976328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28056,6 +27085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1288.7415
@@ -28107,35 +27140,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1766152860}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1766152859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1766152858}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1766152860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565452218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 565452218}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1768619221
 GameObject:
   m_ObjectHideFlags: 0
@@ -28235,25 +27246,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1414710196}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1770825739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770825738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1770825738}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1775747928 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1684438953839066021, guid: 06cb9369963e945499a8dff08129b79c, type: 3}
@@ -28475,6 +27467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1789267558}
+  - component: {fileID: 1789267559}
   m_Layer: 0
   m_Name: Collectibles
   m_TagString: Untagged
@@ -28585,6 +27578,110 @@ Transform:
   - {fileID: 1856977999}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1789267559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789267557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
+  targets:
+  - {fileID: 1712451644}
+  - {fileID: 999135182}
+  - {fileID: 779022407}
+  - {fileID: 1439420062}
+  - {fileID: 1073995799}
+  - {fileID: 215390527}
+  - {fileID: 2013309036}
+  - {fileID: 158183334}
+  - {fileID: 1885182713}
+  - {fileID: 952880851}
+  - {fileID: 365224004}
+  - {fileID: 1165271986}
+  - {fileID: 605286583}
+  - {fileID: 1300062583}
+  - {fileID: 1047390249}
+  - {fileID: 2105040173}
+  - {fileID: 423301873}
+  - {fileID: 1101964909}
+  - {fileID: 636842881}
+  - {fileID: 1854825386}
+  - {fileID: 1868328365}
+  - {fileID: 170913437}
+  - {fileID: 1358053238}
+  - {fileID: 1573489179}
+  - {fileID: 508410255}
+  - {fileID: 752127185}
+  - {fileID: 971852995}
+  - {fileID: 834646375}
+  - {fileID: 929764922}
+  - {fileID: 1307702289}
+  - {fileID: 1021269347}
+  - {fileID: 2003648785}
+  - {fileID: 1154511344}
+  - {fileID: 1456754032}
+  - {fileID: 1314625576}
+  - {fileID: 2106521911}
+  - {fileID: 2101258669}
+  - {fileID: 54814537}
+  - {fileID: 96967543}
+  - {fileID: 1384937244}
+  - {fileID: 741674900}
+  - {fileID: 643590542}
+  - {fileID: 599278864}
+  - {fileID: 30699473}
+  - {fileID: 602588541}
+  - {fileID: 1550348905}
+  - {fileID: 225941351}
+  - {fileID: 2015451001}
+  - {fileID: 533196701}
+  - {fileID: 135427684}
+  - {fileID: 679703600}
+  - {fileID: 253371862}
+  - {fileID: 947285972}
+  - {fileID: 751701499}
+  - {fileID: 2125694329}
+  - {fileID: 1157034424}
+  - {fileID: 1154071033}
+  - {fileID: 1674470262}
+  - {fileID: 1560142499}
+  - {fileID: 1566451099}
+  - {fileID: 2045382320}
+  - {fileID: 1952693632}
+  - {fileID: 1855064552}
+  - {fileID: 1770825738}
+  - {fileID: 892246353}
+  - {fileID: 9729890}
+  - {fileID: 982112201}
+  - {fileID: 1434324103}
+  - {fileID: 1550830846}
+  - {fileID: 1442611747}
+  - {fileID: 1566033071}
+  - {fileID: 1644663046}
+  - {fileID: 1626599908}
+  - {fileID: 823303043}
+  - {fileID: 1325394268}
+  - {fileID: 2128927756}
+  - {fileID: 1127806969}
+  - {fileID: 1741843999}
+  - {fileID: 519027553}
+  - {fileID: 1251654036}
+  - {fileID: 565452218}
+  - {fileID: 894947152}
+  - {fileID: 1579687298}
+  - {fileID: 275238342}
+  - {fileID: 896980153}
+  - {fileID: 1587031839}
+  player: {fileID: 0}
+  maxDistance: 20
+  checkInterval: 0.1
+  useRendererBounds: 1
+  invert: 0
 --- !u!1 &1789734047 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1674735640016498080, guid: fc9cd11ecce17ae4b81423d4b363c5d5, type: 3}
@@ -29166,6 +28263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1288.7415
@@ -29217,35 +28318,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1820397817}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1820397816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1820397815}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1820397817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894947152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 894947152}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1820588461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29257,6 +28336,10 @@ PrefabInstance:
     - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_Name
       value: BonePile7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29301,35 +28384,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1820588463}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &1820588462 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 1820588461}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1820588463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752127185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 752127185}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1825873448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29390,38 +28451,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1825873454}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &1825873449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 1825873448}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1825873454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96967543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 96967543}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1826465544
 GameObject:
   m_ObjectHideFlags: 0
@@ -29524,6 +28567,10 @@ PrefabInstance:
     - target: {fileID: 1785243225640268521, guid: 24dceb8b779661947b30228a33def071, type: 3}
       propertyPath: m_Name
       value: FinalStaircase
+      objectReference: {fileID: 0}
+    - target: {fileID: 3145202092068284693, guid: 24dceb8b779661947b30228a33def071, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6733893308308077912, guid: 24dceb8b779661947b30228a33def071, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29636,38 +28683,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1835251718}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &1835251713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 1835251712}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1835251718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636842881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 636842881}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1837668905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29724,38 +28753,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1837668911}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &1837668906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 1837668905}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1837668911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54814537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 54814537}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1839248850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30118,49 +29129,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 334806487}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1854825391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854825386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1854825386}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1855064552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 545927412}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1855064553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855064552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1855064552}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1856977998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30213,38 +29186,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1856978000}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &1856977999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2325737162170364955, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 1856977998}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1856978000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587031839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1587031839}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1860755354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30330,25 +29285,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 1348763508}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1868328370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868328365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1868328365}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1869263269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30664,25 +29600,72 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8635762935570457874, guid: a567bd1c798587b428cfdacf6715c4e4, type: 3}
   m_PrefabInstance: {fileID: 732163998}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1885182714
-MonoBehaviour:
+--- !u!1001 &1890752236
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 901470989}
+    m_Modifications:
+    - target: {fileID: 1342620117562210395, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_Name
+      value: VHS tape 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914007874044112637, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: optionalTag
+      value: Tape5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.65602
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.25424
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 28.331001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+--- !u!4 &1890752237 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+  m_PrefabInstance: {fileID: 1890752236}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885182713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1885182713}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1896714706
 GameObject:
   m_ObjectHideFlags: 0
@@ -31040,6 +30023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1288.7411
@@ -31095,35 +30082,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1922354310}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1922354309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1922354308}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1922354310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599278864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 599278864}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1924486695 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8275610262238567920, guid: 1228915f8d004aa4f8a4765748bccb12, type: 3}
@@ -31406,38 +30371,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1944197602}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &1944197601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2325737162170364955, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 1944197600}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1944197602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170913437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 170913437}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1944910393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31449,6 +30396,10 @@ PrefabInstance:
     - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_Name
       value: Crate (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -31497,35 +30448,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1944910395}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1944910394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1944910393}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1944910395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492597318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 492597318}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1950547384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31578,38 +30507,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1950547386}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
 --- !u!4 &1950547385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2325737162170364955, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 1950547384}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1950547386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442611747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1442611747}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &1950906997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8275610262238567920, guid: 1228915f8d004aa4f8a4765748bccb12, type: 3}
@@ -31764,25 +30675,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 883112942}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1952693633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!4 &1957117635 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+  m_PrefabInstance: {fileID: 350775288}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952693632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1952693632}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1962456487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33585,6 +32482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.896
@@ -33628,35 +32529,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1997458211}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &1997458210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 1997458209}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1997458211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519027553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 519027553}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &1997989214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33787,38 +32666,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1999803195}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &1999803190 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 1999803189}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1999803195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566033071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1566033071}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &2000387144
 GameObject:
   m_ObjectHideFlags: 0
@@ -34098,25 +32959,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 847203378}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2003648786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003648785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 2003648785}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &2005978157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34210,25 +33052,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 1484500648}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2013309041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013309036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 2013309036}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &2014912847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34314,25 +33137,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 44854180}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2015451002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015451001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 2015451001}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &2015672802
 GameObject:
   m_ObjectHideFlags: 0
@@ -34568,6 +33372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1288.7412
@@ -34615,35 +33423,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2031472774}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &2031472773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 2031472772}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2031472774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021269347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1021269347}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &2040319205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34729,25 +33515,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 308378487}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2045382321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045382320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 2045382320}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &2054623228
 GameObject:
   m_ObjectHideFlags: 0
@@ -34939,38 +33706,86 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullCollectable
       objectReference: {fileID: 0}
+    - target: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2069569188}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &2069569183 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 2069569182}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2069569188
-MonoBehaviour:
+--- !u!1001 &2074206811
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 901470989}
+    m_Modifications:
+    - target: {fileID: 1342620117562210395, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_Name
+      value: VHS tape 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914007874044112637, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: optionalTag
+      value: Tape3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -63.155678
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5155568
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 170.13922
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+--- !u!4 &2074206812 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7312157816830297545, guid: 6990065f7c2ec0e4c85a2dc32cf2851c, type: 3}
+  m_PrefabInstance: {fileID: 2074206811}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579687298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1579687298}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &2081771119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35219,6 +34034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1288.7411
@@ -35274,35 +34093,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6723572790082455475, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2096783208}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
 --- !u!4 &2096783207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8637894662011278350, guid: 417b8c9db116d6246a6c918595e673cf, type: 3}
   m_PrefabInstance: {fileID: 2096783206}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2096783208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550348905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 1550348905}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &2096907222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35366,59 +34163,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2096907228}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
 --- !u!4 &2096907223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242624386287513012, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 2096907222}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2096907228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220987841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 220987841}
-  player: {fileID: 1662760769}
-  maxDistance: 20
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &2101258669 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 1659922563}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2101258670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101258669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 2101258669}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &2101465131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35471,38 +34227,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonePile4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8040071787372411504, guid: 0b010dcf06211354db53711cdc6e25d5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8040071787372411504, guid: 0b010dcf06211354db53711cdc6e25d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2101465133}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b010dcf06211354db53711cdc6e25d5, type: 3}
 --- !u!4 &2101465132 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7480773026025934605, guid: 0b010dcf06211354db53711cdc6e25d5, type: 3}
   m_PrefabInstance: {fileID: 2101465131}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2101465133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423301873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 423301873}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &2102335846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35572,49 +34310,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8939898359094899223, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
   m_PrefabInstance: {fileID: 1265487953}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2105040174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105040173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 2105040173}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &2106521911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6815297825449327964, guid: df82fcd7e650eed4ab6ea6cb23412ad6, type: 3}
   m_PrefabInstance: {fileID: 1578519414}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2106521912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106521911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 2106521911}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &2107090957
 GameObject:
   m_ObjectHideFlags: 0
@@ -35976,25 +34676,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8789275547863749437, guid: 1e7a2edd89e0db64b8553110e78eea23, type: 3}
   m_PrefabInstance: {fileID: 990799723}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2125694334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125694329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 2125694329}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1001 &2126583478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36006,6 +34687,10 @@ PrefabInstance:
     - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_Name
       value: BonePile7 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36050,59 +34735,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1003256953593132718, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2126583480}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
 --- !u!4 &2126583479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8516820422965172890, guid: 87442b1016c294b4f999ea7e830d86dd, type: 3}
   m_PrefabInstance: {fileID: 2126583478}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2126583480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834646375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 834646375}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &2128927756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8939898359094899223, guid: 2242d63f36892d34e9e29d43aad1ed8d, type: 3}
   m_PrefabInstance: {fileID: 276489276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2128927757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128927756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5823114c9ca67458eb81597442c733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistanceToggle
-  targets:
-  - {fileID: 2128927756}
-  player: {fileID: 1662760769}
-  maxDistance: 1
-  checkInterval: 0.25
-  useRendererBounds: 1
-  invert: 0
 --- !u!1 &2134388631
 GameObject:
   m_ObjectHideFlags: 0
@@ -37153,21 +35797,17 @@ SceneRoots:
   - {fileID: 1088547060}
   - {fileID: 1873790708}
   - {fileID: 1816567255}
+  - {fileID: 640593534}
   - {fileID: 686360893}
   - {fileID: 1962979167}
   - {fileID: 1978052879}
-  - {fileID: 640593534}
   - {fileID: 1680621835}
-  - {fileID: 350775288}
   - {fileID: 510456296}
   - {fileID: 1737120307}
   - {fileID: 2091426543}
   - {fileID: 1789267558}
   - {fileID: 1076101888}
-  - {fileID: 1632373679}
-  - {fileID: 966794396}
-  - {fileID: 223650229}
-  - {fileID: 439031469}
-  - {fileID: 674730771}
-  - {fileID: 249276913}
-  - {fileID: 411872997}
+  - {fileID: 180441922}
+  - {fileID: 1433581938}
+  - {fileID: 901470989}
+  - {fileID: 1710002416}
