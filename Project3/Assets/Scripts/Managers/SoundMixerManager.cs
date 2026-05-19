@@ -1,13 +1,19 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class SoundMixerManager : MonoBehaviour
 {
     public static SoundMixerManager Instance;
 
+    [Header("Audio Configurations")]
     [SerializeField] private AudioMixer audioMixer;
 
-    // Keys used to save and look up data in the player's system registry
+    [Header("Optional Title Scene Sliders")]
+    [SerializeField] private Slider masterSlider;
+    [SerializeField] private Slider sfxSlider;
+    [SerializeField] private Slider musicSlider;
+
     private const string MasterKey = "MasterVolume";
     private const string SFXKey = "SFXVolume";
     private const string MusicKey = "MusicVolume";
@@ -26,13 +32,36 @@ public class SoundMixerManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        // Load saved data immediately before the first frame runs
         LoadVolumeSettings();
     }
 
     void Start()
     {
         ApplyAll();
+        InitializeSliders();
+    }
+
+    private void InitializeSliders()
+    {
+        // Set values SILENTLY so they don't trigger a false change event back to 1.0
+        if (masterSlider != null) masterSlider.SetValueWithoutNotify(masterVolume);
+        if (sfxSlider != null) sfxSlider.SetValueWithoutNotify(soundFXVolume);
+        if (musicSlider != null) musicSlider.SetValueWithoutNotify(musicVolume);
+
+        // Wipe any old listeners to ensure clean dynamic execution loops
+        ClearSliderListeners();
+
+        // Assign runtime link behaviors directly via code
+        if (masterSlider != null) masterSlider.onValueChanged.AddListener(SetMasterVolume);
+        if (sfxSlider != null) sfxSlider.onValueChanged.AddListener(SetSoundFXVolume);
+        if (musicSlider != null) musicSlider.onValueChanged.AddListener(SetMusicVolume);
+    }
+
+    private void ClearSliderListeners()
+    {
+        if (masterSlider != null) masterSlider.onValueChanged.RemoveAllListeners();
+        if (sfxSlider != null) sfxSlider.onValueChanged.RemoveAllListeners();
+        if (musicSlider != null) musicSlider.onValueChanged.RemoveAllListeners();
     }
 
     public void SetMasterVolume(float level)
@@ -60,24 +89,16 @@ public class SoundMixerManager : MonoBehaviour
     void ApplySFX() => audioMixer.SetFloat("soundFXVolume", ToDB(soundFXVolume));
     void ApplyMusic() => audioMixer.SetFloat("musicVolume", ToDB(musicVolume));
 
-    void ApplyAll()
-    {
-        ApplyMaster();
-        ApplySFX();
-        ApplyMusic();
-    }
-
+    void ApplyAll() { ApplyMaster(); ApplySFX(); ApplyMusic(); }
     float ToDB(float value) => Mathf.Log10(Mathf.Clamp(value, 0.0001f, 1f)) * 20f;
 
     void LoadVolumeSettings()
     {
-        // GetFloat reads the key. If it doesn't exist yet, it falls back to the default value (1f)
         masterVolume = PlayerPrefs.GetFloat(MasterKey, 1f);
         soundFXVolume = PlayerPrefs.GetFloat(SFXKey, 1f);
         musicVolume = PlayerPrefs.GetFloat(MusicKey, 1f);
     }
 
-    // Force an explicit save data write when the game closes or loses focus
     void OnApplicationQuit()
     {
         PlayerPrefs.Save();
